@@ -12,10 +12,9 @@
         header="3D PRINTS OVERVIEW"
         subheaderone="How to Request"
         paragraphone={`1. Have your file in either STL, 3MF, or STEP.
-2. Go to my.binghamton.edu
-3. Click "Emerging Technology Studio" on the navigation bar under BUBrain logo (Check "Other" if missing)
-4. Click the blue Submission Form button
-5. Fill it out and wait for our email!`}
+2. Go to <a href="https://my.binghamton.edu/page/ets/home" target="_blank" rel="noopener noreferrer"><u>my binghamton</u></a>
+3. Click the blue Submission Form button
+4. Fill it out and wait for our email!`}
         subheadertwo="How to Pay"
         paragraphtwo="You don't! This semester, prints are based on a credit system. If you run out of credits, reach out to us with justification to get more!"
     />

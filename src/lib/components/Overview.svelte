@@ -16,7 +16,7 @@
             {subheaderone}
         </p>
         <p class="whitespace-pre-line text-orange pl-5">
-            {paragraphone}
+            {@html paragraphone}
         </p>
         <p class="italic md:text-4xl text-lg mt-10">
             {subheadertwo}

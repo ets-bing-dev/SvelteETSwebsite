@@ -7,7 +7,7 @@
 <svelte:head>
   <!-- General Metadata -->
   <title>ETS | Emerging Technology Studio</title>
-  <meta name="description" content="We are looking forward to starting a project with you! Contact us to learn more about 3D printing, crafting, and immersive technologies at ETS." />
+  <meta name="description" content="Binghamton University's Premiere Makerspace, specializing in 3D Printing (FDM/SLA), 3D Scanning, 3D Modeling, 2D Cutting (Sticker & Vinyl), Augmented & Virtual Reality, and more!" />
 
   <!-- Open Graph Metadata (Logo and Title Update) -->
   <meta property="og:title" content="ETS | Emerging Technology Studio" />
@@ -17,7 +17,7 @@
   <meta property="og:type" content="website" />
 
   <!-- Favicon -->
-  <link rel="icon" href="/static/favicon.png" />
+  <link rel="icon" href="/favicon.ico" />
 </svelte:head>
 
 <!-- Add FontAwesome Icons -->
