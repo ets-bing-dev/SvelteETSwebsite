@@ -61,32 +61,52 @@
 
 <Separator />
 
+
 <div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
     <h2 class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10">About the Competition</h2>
+    
+    <!-- Card Section -->
     <div class="flex flex-wrap justify-center gap-6 pt-20 -pb-10">
         {#each competitionDetails as detail}
-            <div class="bg-gray-200 rounded-2xl p-4 w-64 text-center shadow-lg">
-                <p class="text-off-white text-5xl">{detail.logo} </p>
-                <h3 class="text-off-white font-bold text-xl mt-3">{detail.title}</h3>
-                <p class="text-orange text-lg">{detail.description}</p>
+            <div class="bg-gray-200 rounded-2xl p-4 w-64 text-center shadow-lg relative">
+                
+                <p class="text-off-white text-5xl">{detail.logo}</p>
+                
+                <!-- Title with Background Rectangle -->
+                <div class="relative w-full flex justify-center">
+                    <h3 class="text-white font-bold text-xl mt-3 relative z-10 px-2">
+                        {detail.title}
+                    </h3>
+                    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-5/6 h-6 bg-accent-purple rounded-md z-0"></div>
+                </div>
+
+                <p class="text-orange text-lg mt-2">{detail.description}</p>
             </div>
         {/each}
     </div>
 </div>
 
+
 <Separator />
 
-<!-- Embedded Form -->
-<div style="width: 100%; max-width: 800px; margin: auto;">
-    <iframe 
-      src={formUrl}
-      width="100%"
-      height="600"
-      style="border: none;"
-      allowfullscreen
-      title="Google Form"
-    >
-      Loading…
-    </iframe>
+<div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
+    <h2 class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10">Join the Challenge</h2>
+
+    <!-- Embedded Form -->
+    <div class="mt-10 md:mt-16 w-full flex justify-center">
+        <div style="width: 100%; max-width: 800px; margin: auto;">
+            <iframe 
+            src={formUrl}
+            width="100%"
+            height="600"
+            style="border: none;"
+            allowfullscreen
+            title="Google Form"
+            >
+            Loading…
+            </iframe>
+        </div>
+    </div>
 </div>
+
   
