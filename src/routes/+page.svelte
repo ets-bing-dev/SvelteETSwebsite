@@ -25,7 +25,7 @@
     Emerging Technology Studio!
   </p>
   <p class="md:mt-40 mt-20 md:text-3xl text-xl text-green">
-    Binghamton University's
+   Heidelberg 100
   </p>
   <p class="mt-2 md:text-3xl text-xl">
     Premier Makerspace.
