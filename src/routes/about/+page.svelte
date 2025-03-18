@@ -116,21 +116,21 @@
      <About
      image="/images/etsjake.png"
      name="Bianna Chen"
-     position="Intern"
+     position="Technical Intern"
      major="Computer Science"
      year="Freshman"
      />
      <About
      image="/images/etsjake.png"
      name="Rebecca Jang"
-     position="Intern"
+     position="Technical Intern"
      major="Mechanical Engineering"
      year="Sophmore"
      />
      <About
      image="/images/etsjake.png"
      name="Daniel Zheng"
-     position="Intern"
+     position="Technical Intern"
      major="Computer Science"
      year="Freshman"
      />
