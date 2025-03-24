@@ -138,14 +138,18 @@
 
 <Separator />
 
-<div class = "flex flex-col w-full h-full items-center font-bold font-plex-mono text-white">
-    <h1 class = "font-extrabold flex md:text-5xl text-3xl underline">
+<!-- <div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
+    <h2 class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">Join the Challenge</h2>
+</div> -->
+
+<div class = "flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
+    <h2 class = "font-extrabold flex md:text-5xl text-3xl underline w-full items-end custom-height-md md:pt-0 pt-10">
         FAQ
-    </h1>
+    </h2>
     <!-- FAQ Section -->
     <div class="flex md:flex-col flex-row mt-4 items-center grid place-items-center">
         {#each faqInfo as info}
-            <div class="flex flex-col items-center text-center justify-center md:gap-6 gap-4 md:pt-10 pt-5 md:px-20 px-10">
+            <div class="flex flex-col md:gap-6 gap-4 md:pt-10 pt-5 md:px-20 px-10">
                 <p class="text-green text-2xl font-bold underline">{info.question}</p>
                 <p class="text-orange text-xl">{info.answer}</p>
             </div>

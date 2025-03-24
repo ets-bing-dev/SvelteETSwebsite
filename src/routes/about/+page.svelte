@@ -114,21 +114,21 @@
 
 <div class="h-full w-screen grid md:grid-cols-3 grid-cols-2 md:px-20 px-5">
      <About
-     image="/images/etsjake.png"
+     image="/images/default.png"
      name="Bianna Chen"
      position="Technical Intern"
      major="Computer Science"
      year="Freshman"
      />
      <About
-     image="/images/etsjake.png"
+     image="/images/etsrebecca.png"
      name="Rebecca Jang"
      position="Technical Intern"
      major="Mechanical Engineering"
      year="Sophmore"
      />
      <About
-     image="/images/etsjake.png"
+     image="/images/etsdaniel.png"
      name="Daniel Zheng"
      position="Technical Intern"
      major="Computer Science"
