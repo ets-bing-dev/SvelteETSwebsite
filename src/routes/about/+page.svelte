@@ -112,6 +112,32 @@
 
 <Separator />
 
+<div class="h-full w-screen grid md:grid-cols-3 grid-cols-2 md:px-20 px-5">
+     <About
+     image="/images/default.png"
+     name="Bianna Chen"
+     position="Technical Intern"
+     major="Computer Science"
+     year="Freshman"
+     />
+     <About
+     image="/images/etsrebecca.png"
+     name="Rebecca Jang"
+     position="Technical Intern"
+     major="Mechanical Engineering"
+     year="Sophmore"
+     />
+     <About
+     image="/images/etsdaniel.png"
+     name="Daniel Zheng"
+     position="Technical Intern"
+     major="Computer Science"
+     year="Freshman"
+     />
+</div>
+
+<Separator />
+
 <!-- Faculty Advisor Section -->
 <div class="font-plex-mono font-bold h-full w-screen md:px-20 px-5">
      <p class="md:text-4xl text-xl text-white italic mt-10">
