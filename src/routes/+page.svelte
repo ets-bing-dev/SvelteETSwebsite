@@ -49,7 +49,7 @@
     OUR SERVICES
   </p>
   <div class="md:block hidden h-5/6 w-screen">
-    <div class="flex md:flex-row flex-col justify-center h-full w-screen items-center space-x-20 text-black font-bold"> 
+    <div class="opacity-80 flex md:flex-row flex-col justify-center h-full w-screen items-center space-x-20 text-black font-bold"> 
       <HomepageCard
         image={printer}
         header="3D Printing"
@@ -84,7 +84,7 @@
   </div>
 
   <div class="md:hidden h-full w-screen">
-    <div class="flex md:flex-row flex-col justify-center h-full w-screen items-center space-y-10 text-black font-bold">
+    <div class="opacity-80 flex md:flex-row flex-col justify-center h-full w-screen items-center space-y-10 text-black font-bold">
       <HomepageCardMobile
         image={printer}
         header="3D Printing"
