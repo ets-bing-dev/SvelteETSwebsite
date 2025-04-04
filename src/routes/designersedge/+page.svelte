@@ -128,12 +128,10 @@
 
     <!-- collab imgs -->
     <div class="flex justify-center mt-10 p-15 gap-6">
-        <img src="/designersedge/poster1.jpg" alt="poster" class="w-full max-w-sm rounded-xl shadow-md" />
-        <img src="/designersedge/poster2.png" alt="poster" class="w-full max-w-sm rounded-xl shadow-md" />
-    </div>
-    <div class="flex justify-center mt-10 p-15 gap-6">
-        <img src="/designersedge/poster3.png" alt="poster" class="w-full max-w-sm rounded-xl shadow-md" />
-        <img src="/designersedge/poster4.PNG" alt="poster" class="w-full max-w-sm rounded-xl shadow-md" />
+        <img src="/designersedge/poster1.jpg" alt="poster" class="w-full max-w-xs rounded-xl shadow-md" />
+        <img src="/designersedge/poster2.png" alt="poster" class="w-full max-w-xs rounded-xl shadow-md" />
+        <img src="/designersedge/poster3.png" alt="poster" class="w-full max-w-xs rounded-xl shadow-md" />
+        <img src="/designersedge/poster4.PNG" alt="poster" class="w-full max-w-xs rounded-xl shadow-md" />
     </div>
 </div>
 
