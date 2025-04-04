@@ -122,7 +122,50 @@
 
 <Separator />
 
-<!-- <div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
+
+<div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
+    <h2 class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">Workshop Posters</h2>
+
+    <!-- collab imgs -->
+    <div class="flex justify-center mt-10 p-15 gap-6">
+        <img src="/designersedge/poster1.jpg" alt="poster" class="w-full max-w-sm rounded-xl shadow-md" />
+        <img src="/designersedge/poster2.png" alt="poster" class="w-full max-w-sm rounded-xl shadow-md" />
+    </div>
+    <div class="flex justify-center mt-10 p-15 gap-6">
+        <img src="/designersedge/poster3.png" alt="poster" class="w-full max-w-sm rounded-xl shadow-md" />
+        <img src="/designersedge/poster4.PNG" alt="poster" class="w-full max-w-sm rounded-xl shadow-md" />
+    </div>
+</div>
+
+<Separator />
+
+<div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
+    <h2 class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">Sponsors</h2>
+
+    <!-- collab imgs -->
+    <div class="flex justify-center mt-10 p-15 gap-7">
+        <img src="/designersedge/sponsor1.png" alt="sponsor" class="h-full max-w-xs rounded-xl shadow-md" />
+        <img src="/designersedge/sponsor2.png" alt="sponsor" class="h-full max-w-xs rounded-xl shadow-md" />
+        <img src="/designersedge/sponsor3.png" alt="sponsor" class="h-full max-w-xs rounded-xl shadow-md" />
+    </div>
+
+    <h2 class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">Collaborators</h2>
+
+    <!-- collab imgs -->
+    <div class="flex justify-center mt-10 p-15 gap-7">
+        <img src="/designersedge/collab1.png" alt="collab" class="h-full max-w-xs rounded-xl shadow-md" />
+        <img src="/designersedge/collab2.png" alt="collab" class="h-full max-w-xs rounded-xl shadow-md" />
+        <img src="/designersedge/collab3.png" alt="collab" class="h-full max-w-xs rounded-xl shadow-md" />
+    </div>
+    <div class="flex justify-center mt-10 p-15 gap-7">
+        <img src="/designersedge/collab4.png" alt="collab" class="h-full max-w-xs rounded-xl shadow-md" />
+        <img src="/designersedge/collab5.png" alt="collab" class="h-full max-w-xs rounded-xl shadow-md" />
+    </div>
+</div>
+
+<Separator />
+
+<div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
     <h2 class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">Join the Challenge</h2>
 
     <div class="mt-10 md:mt-16 w-full flex justify-center">
@@ -138,23 +181,6 @@
             Loading…
             </iframe>
         </div>
-    </div>
-</div>
-
-<Separator /> -->
-
-
-<div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
-    <h2 class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">Workshop</h2>
-
-    <!-- collab imgs -->
-    <div class="flex justify-center mt-10 p-15 gap-6">
-        <img src="/designersedge/poster1.jpg" alt="info" class="w-full max-w-sm rounded-xl shadow-md" />
-        <img src="/designersedge/poster2.png" alt="info" class="w-full max-w-sm rounded-xl shadow-md" />
-    </div>
-    <div class="flex justify-center mt-10 p-15 gap-6">
-        <img src="/designersedge/poster3.png" alt="info" class="w-full max-w-sm rounded-xl shadow-md" />
-        <img src="/designersedge/poster4.PNG" alt="info" class="w-full max-w-sm rounded-xl shadow-md" />
     </div>
 </div>
 
