@@ -36,7 +36,6 @@
     
     // faq info
     let faqInfo = [
-
         {
             question: "What software am I allowed to use?",
             answer: "You are allowed to utilize any software or applications you have access to or that we provide to create your project. However, the usage of any AI generative software or any software alike will restrict your project to only be judged for the AI category."
@@ -56,8 +55,7 @@
         {
             question: "Are there registration fees?",
             answer: "This competition is free to attend! Just register using the form above and check in at the venue."
-        },
-
+        }
     ];
 
 </script>
@@ -107,19 +105,26 @@
                     <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-5/6 h-6 bg-accent-purple rounded-md z-0"></div>
                 </div>
 
-                <p class="text-orange text-lg mt-2">{detail.description}</p>
+                <p class="text-orange font-normal text-lg mt-2">{detail.description}</p>
             </div>
         {/each}
     </div>
+
+    <!-- Card Section -->
+    <div class="flex justify-center mt-10 p-15 gap-6">
+        <img src="/designersedge/info1.png" alt="info" class="w-full max-w-lg rounded-xl shadow-md" />
+        <img src="/designersedge/info2.png" alt="info" class="w-full max-w-lg rounded-xl shadow-md" />
+    </div>
+
+
 </div>
 
 
 <Separator />
 
-<div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
+<!-- <div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
     <h2 class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">Join the Challenge</h2>
 
-    <!-- Embedded Form -->
     <div class="mt-10 md:mt-16 w-full flex justify-center">
         <div style="width: 100%; max-width: 800px; margin: auto;">
             <iframe 
@@ -136,22 +141,37 @@
     </div>
 </div>
 
+<Separator /> -->
+
+
+<div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
+    <h2 class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">Workshop</h2>
+
+    <!-- collab imgs -->
+    <div class="flex justify-center mt-10 p-15 gap-6">
+        <img src="/designersedge/poster1.jpg" alt="info" class="w-full max-w-sm rounded-xl shadow-md" />
+        <img src="/designersedge/poster2.png" alt="info" class="w-full max-w-sm rounded-xl shadow-md" />
+    </div>
+    <div class="flex justify-center mt-10 p-15 gap-6">
+        <img src="/designersedge/poster3.png" alt="info" class="w-full max-w-sm rounded-xl shadow-md" />
+        <img src="/designersedge/poster4.PNG" alt="info" class="w-full max-w-sm rounded-xl shadow-md" />
+    </div>
+</div>
+
 <Separator />
 
-<!-- <div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
-    <h2 class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">Join the Challenge</h2>
-</div> -->
 
-<div class = "flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
-    <h2 class = "font-extrabold flex md:text-5xl text-3xl underline w-full items-end custom-height-md md:pt-0 pt-10">
+
+<div class = "flex flex-col w-screen h-full font-plex-mono text-white font-normal md:px-20 px-5 pb-32">
+    <h2 class = "font-extrabold flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">
         FAQ
     </h2>
     <!-- FAQ Section -->
-    <div class="flex md:flex-col flex-row mt-4 items-center grid place-items-center">
+    <div class="font-normal flex md:flex-col flex-row mt-4">
         {#each faqInfo as info}
             <div class="flex flex-col md:gap-6 gap-4 md:pt-10 pt-5 md:px-20 px-10">
-                <p class="text-green text-2xl font-bold underline">{info.question}</p>
-                <p class="text-orange text-xl">{info.answer}</p>
+                <p class="text-green text-2xl font-bold">{info.question}</p>
+                <p class="text-orange font-normal text-lg text-left">{info.answer}</p>
             </div>
         {/each}
     </div>
