@@ -1,6 +1,7 @@
 <script>
     import Separator from "$lib/components/Separator.svelte";
     const formUrl = "https://forms.gle/HxASYdmcsKcadv9CA";
+    const pcUrl = "https://forms.gle/epoRDHjzYsA8v5Z66";
 
     // info section details
     let details = [
@@ -82,6 +83,15 @@
             </div>
         {/each}
     </div>
+</div>
+
+<Separator />
+
+<div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
+    <h2 class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">Progress Check</h2>
+    <p class="flex md:text-xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">To be completed before Saturday 7pm!<p>
+    <a href="https://forms.gle/Y34DDmXiNomTzE7G7" class="hover:text-link hover:scale-105 transition-all underline duration-150"> Click here for the Progress Check Form</a>
+
 </div>
 
 <Separator />
@@ -172,6 +182,7 @@
 </div>
 
 <Separator />
+
 
 <div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
     <h2 class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">Join the Challenge</h2>
