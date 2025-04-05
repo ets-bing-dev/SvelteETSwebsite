@@ -7,7 +7,7 @@
         { title: "30 HOURS", subtitle: "of designing" },
         { title: "APRIL 2025", subtitle: "5th ~ 6th" },
         { title: "LOCATION", subtitle: "Innovation Lab" },
-        { title: "THEME", subtitle: "To be Revealed 🤫" }
+        { title: "THEME", subtitle: "Connections" }
     ];
 
     // info on competition
@@ -112,11 +112,21 @@
 
     <!-- Card Section -->
     <div class="flex justify-center mt-10 p-15 gap-6">
-        <img src="/designersedge/info1.png" alt="info" class="w-full max-w-lg rounded-xl shadow-md" />
-        <img src="/designersedge/info2.png" alt="info" class="w-full max-w-lg rounded-xl shadow-md" />
+        <img src="/designersedge/info1.png" alt="info" class="w-full max-w-sm rounded-md shadow-md" />
+        <img src="/designersedge/info2.png" alt="info" class="w-full max-w-sm rounded-md shadow-md" />
+        <img src="/designersedge/info3.png" alt="info" class="w-full max-w-sm rounded-md shadow-md" />
     </div>
 
-
+    <div class="ml-10 md:mt-16 justify-left flex w-screen h-screen">
+        <iframe title = "opening ceremony" 
+                src="https://docs.google.com/presentation/d/e/2PACX-1vThxsxuF-InnZ60ef3LGzN8Qe0rYRURhWB0SDZAU6WF1_ZwycjYe6YOnxygaPPb9Q/embed?start=false&loop=true&delayms=3000" 
+                frameborder="0" 
+                width="85%" 
+                height="75%" 
+                mozallowfullscreen="true" 
+                webkitallowfullscreen="true">
+        </iframe>
+    </div>
 </div>
 
 
