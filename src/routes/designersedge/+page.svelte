@@ -87,11 +87,17 @@
 
 <Separator />
 
+<div class="flex flex-row">
 <div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
     <h2 class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">Progress Check</h2>
-    <p class="flex md:text-xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">To be completed before Saturday 7pm!<p>
-    <a href="https://forms.gle/Y34DDmXiNomTzE7G7" class="hover:text-link hover:scale-105 transition-all underline duration-150"> Click here for the Progress Check Form</a>
-
+    <p class="flex md:text-xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">to be completed before Saturday 7pm!<p>
+    <a href="https://forms.gle/y34ddmxinomtze7g7" class="hover:text-link hover:scale-105 transition-all underline duration-150"> click here for the progress check form</a>
+</div>
+<div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
+    <h2 class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">Final Submission Form</h2>
+    <p class="flex md:text-xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">to be completed before Sunday 4pm!<p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtDJXa-UmSSz2qHoJMrl8caecxVLbi6k9Tos5h8Y9k-9YqnA/viewform?usp=header" class="hover:text-link hover:scale-105 transition-all underline duration-150"> click here for the progress check form</a>
+</div>``
 </div>
 
 <Separator />
