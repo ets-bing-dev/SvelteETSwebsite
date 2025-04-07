@@ -91,12 +91,12 @@
 <div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
     <h2 class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">Progress Check</h2>
     <p class="flex md:text-xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">to be completed before Saturday 7pm!<p>
-    <a href="https://forms.gle/y34ddmxinomtze7g7" class="hover:text-link hover:scale-105 transition-all underline duration-150"> click here for the progress check form</a>
+    <a href="https://forms.gle/y34ddmxinomtze7g7" class="hover:text-link hover:scale-105 transition-all underline duration-150"> Click here for the Progress Check form</a>
 </div>
 <div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
     <h2 class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">Final Submission Form</h2>
     <p class="flex md:text-xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10">to be completed before Sunday 4pm!<p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtDJXa-UmSSz2qHoJMrl8caecxVLbi6k9Tos5h8Y9k-9YqnA/viewform?usp=header" class="hover:text-link hover:scale-105 transition-all underline duration-150"> click here for the progress check form</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtDJXa-UmSSz2qHoJMrl8caecxVLbi6k9Tos5h8Y9k-9YqnA/viewform?usp=header" class="hover:text-link hover:scale-105 transition-all underline duration-150"> Click here for the Submission Form</a>
 </div>``
 </div>
 
@@ -133,6 +133,8 @@
         <img src="/designersedge/info3.png" alt="info" class="w-full max-w-sm rounded-md shadow-md" />
     </div>
 
+    <h3 class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10">Opening Ceremony Slides</h3>    
+
     <div class="ml-10 md:mt-16 justify-left flex w-screen h-screen">
         <iframe title = "opening ceremony" 
                 src="https://docs.google.com/presentation/d/e/2PACX-1vThxsxuF-InnZ60ef3LGzN8Qe0rYRURhWB0SDZAU6WF1_ZwycjYe6YOnxygaPPb9Q/embed?start=false&loop=true&delayms=3000" 
@@ -142,6 +144,19 @@
                 mozallowfullscreen="true" 
                 webkitallowfullscreen="true">
         </iframe>
+    </div>
+
+    <h3 class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10">Closing Ceremony Slides</h3> 
+
+    <div class="ml-10 md:mt-16 justify-left flex w-screen h-screen">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSI95x9tOjsHeaQrNtOgPKYvVdkuSa27vHzqractu66PZ6C2Zq1UXQwrSS8KgBsKQ/pubembed?start=false&loop=true&delayms=3000" 
+        frameborder="0" 
+        width="85%" 
+        height="75%" 
+        allowfullscreen="true" 
+        mozallowfullscreen="true" 
+        webkitallowfullscreen="true">
+    </iframe>
     </div>
 </div>
 
