@@ -44,6 +44,10 @@ background color purple = #231c24
   font-display: swap;
 }
 
+.glowing-image {
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.35));
+}
+
 body {
   background-color: black;
   overflow-x: hidden;
