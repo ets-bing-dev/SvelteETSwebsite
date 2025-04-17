@@ -1,5 +1,6 @@
 <script>
   import Separator from "$lib/components/Separator.svelte";
+  import ImageGallery from "$lib/components/ImageGallery.svelte";
   const formUrl = "https://forms.gle/HxASYdmcsKcadv9CA";
   const pcUrl = "https://forms.gle/epoRDHjzYsA8v5Z66";
 
@@ -9,6 +10,36 @@
     { title: "APRIL 2025", subtitle: "5th ~ 6th" },
     { title: "LOCATION", subtitle: "Innovation Lab" },
     { title: "THEME", subtitle: "Connections" },
+  ];
+
+  let specialThanks = [
+    { name: "THE HACKBU TEAM" },
+    { name: "GARY DEWEY" },
+    { name: "JAMES PITARRESI" },
+    { name: "SHANA M. WHITE" },
+    { name: "ERIN CODY" },
+    { name: "CHRISTOPHER ROBBINS" },
+    { name: "NICOLE ALFARANO" },
+    { name: "YADID ORLOW" },
+  ];
+
+  const images = [
+    { path: "/images/DE2025Winners/GroupWinners.png", title: "Winners" },
+    { path: "/images/DE2025Winners/3DWinners.png", title: "Best 3D Winners" },
+    { path: "/images/DE2025Winners/2DWinners.png", title: "Best 2D Winners" },
+    {
+      path: "/images/DE2025Winners/MMWinners.png",
+      title: "Best Mixed Media Winners",
+    },
+    {
+      path: "/images/DE2025Winners/CarWinners.png",
+      title: "Best Car / Vehicle Winners",
+    },
+    {
+      path: "/images/DE2025Winners/UIUXWinners.png",
+      title: "Best UI / UX Winners",
+    },
+    // add your image paths here
   ];
 
   // info on competition
@@ -92,53 +123,53 @@
 </div>
 
 <!-- <Separator />
-
-<div class="flex flex-row">
-  <div
-    class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
-  >
-    <h2
-      class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
+  
+  <div class="flex flex-row">
+    <div
+      class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
     >
-      Progress Check
-    </h2>
-    <p
-      class="flex md:text-xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
+      <h2
+        class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
+      >
+        Progress Check
+      </h2>
+      <p
+        class="flex md:text-xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
+      >
+        to be completed before Saturday 7pm!
+      </p>
+      <p>
+        <a
+          href="https://forms.gle/y34ddmxinomtze7g7"
+          class="hover:text-link hover:scale-105 transition-all underline duration-150"
+        >
+          Click here for the Progress Check form</a
+        >
+      </p>
+    </div>
+    <div
+      class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
     >
-      to be completed before Saturday 7pm!
-    </p>
-    <p>
-      <a
-        href="https://forms.gle/y34ddmxinomtze7g7"
-        class="hover:text-link hover:scale-105 transition-all underline duration-150"
+      <h2
+        class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
       >
-        Click here for the Progress Check form</a
+        Final Submission Form
+      </h2>
+      <p
+        class="flex md:text-xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
       >
-    </p>
-  </div>
-  <div
-    class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
-  >
-    <h2
-      class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
-    >
-      Final Submission Form
-    </h2>
-    <p
-      class="flex md:text-xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
-    >
-      to be completed before Sunday 4pm!
-    </p>
-    <p>
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSdtDJXa-UmSSz2qHoJMrl8caecxVLbi6k9Tos5h8Y9k-9YqnA/viewform?usp=header"
-        class="hover:text-link hover:scale-105 transition-all underline duration-150"
-      >
-        Click here for the Submission Form</a
-      >
-    </p>
-  </div>
-</div> -->
+        to be completed before Sunday 4pm!
+      </p>
+      <p>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdtDJXa-UmSSz2qHoJMrl8caecxVLbi6k9Tos5h8Y9k-9YqnA/viewform?usp=header"
+          class="hover:text-link hover:scale-105 transition-all underline duration-150"
+        >
+          Click here for the Submission Form</a
+        >
+      </p>
+    </div>
+  </div> -->
 
 <Separator />
 
@@ -200,22 +231,22 @@
   </h3>
 
   <!-- <div class="ml-10 md:mt-16 justify-left flex w-screen h-screen">
-      <iframe
-        title="opening ceremony"
-        src="https://docs.google.com/presentation/d/e/2PACX-1vThxsxuF-InnZ60ef3LGzN8Qe0rYRURhWB0SDZAU6WF1_ZwycjYe6YOnxygaPPb9Q/embed?start=false&loop=true&delayms=3000"
-        frameborder="0"
-        width="85%"
-        height="75%"
-        mozallowfullscreen="true"
-        webkitallowfullscreen="true"
-      >
-      </iframe>
-    </div> -->
+        <iframe
+          title="opening ceremony"
+          src="https://docs.google.com/presentation/d/e/2PACX-1vThxsxuF-InnZ60ef3LGzN8Qe0rYRURhWB0SDZAU6WF1_ZwycjYe6YOnxygaPPb9Q/embed?start=false&loop=true&delayms=3000"
+          frameborder="0"
+          width="85%"
+          height="75%"
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+        >
+        </iframe>
+      </div> -->
 
   <div
     style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
-   padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-   border-radius: 8px; will-change: transform;"
+     padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+     border-radius: 8px; will-change: transform;"
   >
     <iframe
       title="opening ceremony"
@@ -228,11 +259,11 @@
     </iframe>
   </div>
   <!-- <a
-      href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGjmnqpS7Q&#x2F;4O2Nc53I9s46sermFeRHlg&#x2F;view?utm_content=DAGjmnqpS7Q&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
-      target="_blank"
-      rel="noopener">Opening Ceremony Slides</a
-    >
-    by Emerging Technology Studio -->
+        href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGjmnqpS7Q&#x2F;4O2Nc53I9s46sermFeRHlg&#x2F;view?utm_content=DAGjmnqpS7Q&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+        target="_blank"
+        rel="noopener">Opening Ceremony Slides</a
+      >
+      by Emerging Technology Studio -->
 
   <h3
     class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
@@ -241,21 +272,21 @@
   </h3>
 
   <!-- <div class="ml-10 md:mt-16 justify-left flex w-screen h-screen">
-      <iframe
-        src="https://docs.google.com/presentation/d/e/2PACX-1vSI95x9tOjsHeaQrNtOgPKYvVdkuSa27vHzqractu66PZ6C2Zq1UXQwrSS8KgBsKQ/pubembed?start=false&loop=true&delayms=3000"
-        frameborder="0"
-        width="85%"
-        height="75%"
-        allowfullscreen="true"
-        mozallowfullscreen="true"
-        webkitallowfullscreen="true"
-      >
-      </iframe>
-    </div> -->
+        <iframe
+          src="https://docs.google.com/presentation/d/e/2PACX-1vSI95x9tOjsHeaQrNtOgPKYvVdkuSa27vHzqractu66PZ6C2Zq1UXQwrSS8KgBsKQ/pubembed?start=false&loop=true&delayms=3000"
+          frameborder="0"
+          width="85%"
+          height="75%"
+          allowfullscreen="true"
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+        >
+        </iframe>
+      </div> -->
   <div
     style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
-   padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-   border-radius: 8px; will-change: transform;"
+     padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+     border-radius: 8px; will-change: transform;"
   >
     <iframe
       title="closing ceremony"
@@ -268,13 +299,25 @@
     </iframe>
   </div>
   <!-- <a
-      href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGjsg3ZoLE&#x2F;pr3pEnmg3L3y1aVS3lLBkw&#x2F;view?utm_content=DAGjsg3ZoLE&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
-      target="_blank"
-      rel="noopener">Closing Ceremony Slides</a
-    > by Emerging Technology Studio -->
+        href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGjsg3ZoLE&#x2F;pr3pEnmg3L3y1aVS3lLBkw&#x2F;view?utm_content=DAGjsg3ZoLE&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+        target="_blank"
+        rel="noopener">Closing Ceremony Slides</a
+      > by Emerging Technology Studio -->
 </div>
 
 <Separator />
+
+<div class = "flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
+<h3
+  class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
+>
+  Image Gallery
+</h3>
+</div>
+
+<div class="p-6">
+  <ImageGallery {images} />
+</div>
 
 <div
   class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
@@ -286,7 +329,7 @@
   </h2>
 
   <!-- collab imgs -->
-  <div class="flex justify-center mt-10 p-15 gap-6">
+  <div class="flex justify-center mt-10 p-15 gap-6 dropShadow-glow">
     <img
       src="/designersedge/poster1.jpg"
       alt="poster"
@@ -322,7 +365,7 @@
   </h2>
 
   <!-- collab imgs -->
-  <div class="flex justify-center mt-10 p-15 gap-7">
+  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
     <img
       src="/designersedge/sponsor1.png"
       alt="sponsor"
@@ -347,7 +390,7 @@
   </h2>
 
   <!-- collab imgs -->
-  <div class="flex justify-center mt-10 p-15 gap-7">
+  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
     <img
       src="/designersedge/collab1.png"
       alt="collab"
@@ -364,7 +407,7 @@
       class="h-full max-w-xs rounded-xl shadow-md"
     />
   </div>
-  <div class="flex justify-center mt-10 p-15 gap-7">
+  <div class="flex justify-center mt-10 p-15 gap-7 glowing-image">
     <img
       src="/designersedge/collab4.png"
       alt="collab"
@@ -376,36 +419,58 @@
       class="h-full max-w-xs rounded-xl shadow-md"
     />
   </div>
+
+  <h2
+    class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
+  >
+    Special Thanks
+  </h2>
+
+  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+    <img
+      src="/designersedge/thanks1.png"
+      alt="collab"
+      class="h-full max-w-xs rounded-xl shadow-md"
+    />
+  </div>
+
+  <div
+    class="white-space: pre-line grid md:grid-cols-2 grid-cols-2 md:px-20 px-5 md:pt-20 pt-5"
+  >
+    {#each specialThanks as sT}
+      <p class="justify-self-center text-xl">{sT.name}</p>
+    {/each}
+  </div>
 </div>
 
 <!-- Registration Form -->
 
 <!-- <Separator />
-  
-  <div
-    class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
-  >
-    <h2
-      class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
+    
+    <div
+      class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
     >
-      Join the Challenge
-    </h2>
-  
-    <div class="mt-10 md:mt-16 w-full flex justify-center">
-      <div style="width: 100%; max-width: 800px; margin: auto;">
-        <iframe
-          src={formUrl}
-          width="100%"
-          height="600"
-          style="border: none;"
-          allowfullscreen
-          title="Google Form"
-        >
-          Loading…
-        </iframe>
+      <h2
+        class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
+      >
+        Join the Challenge
+      </h2>
+    
+      <div class="mt-10 md:mt-16 w-full flex justify-center">
+        <div style="width: 100%; max-width: 800px; margin: auto;">
+          <iframe
+            src={formUrl}
+            width="100%"
+            height="600"
+            style="border: none;"
+            allowfullscreen
+            title="Google Form"
+          >
+            Loading…
+          </iframe>
+        </div>
       </div>
-    </div>
-  </div> -->
+    </div> -->
 
 <Separator />
 
