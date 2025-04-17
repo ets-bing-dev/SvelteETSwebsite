@@ -22,14 +22,23 @@
     { name: "NICOLE ALFARANO" },
     { name: "YADID ORLOW" },
   ];
-  
+
   const images = [
-    {path: '/images/DE2025Winners/GroupWinners.png', title: "Winners"},
-    {path: '/images/DE2025Winners/3DWinners.png', title: "Best 3D Winners"},
-    {path: '/images/DE2025Winners/2DWinners.png', title: "Best 2D Winners"},
-    {path: '/images/DE2025Winners/MMWinners.png', title: "Best Mixed Media Winners"},
-    {path: '/images/DE2025Winners/CarWinners.png', title: "Best Car / Vehicle Winners"},
-    {path: '/images/DE2025Winners/UIUXWinners.png', title: "Best UI / UX Winners"},
+    { path: "/images/DE2025Winners/GroupWinners.png", title: "Winners" },
+    { path: "/images/DE2025Winners/3DWinners.png", title: "Best 3D Winners" },
+    { path: "/images/DE2025Winners/2DWinners.png", title: "Best 2D Winners" },
+    {
+      path: "/images/DE2025Winners/MMWinners.png",
+      title: "Best Mixed Media Winners",
+    },
+    {
+      path: "/images/DE2025Winners/CarWinners.png",
+      title: "Best Car / Vehicle Winners",
+    },
+    {
+      path: "/images/DE2025Winners/UIUXWinners.png",
+      title: "Best UI / UX Winners",
+    },
     // add your image paths here
   ];
 
@@ -85,7 +94,6 @@
         "This competition is free to attend! Just register using the form above and check in at the venue.",
     },
   ];
-
 </script>
 
 <!-- Header Section -->
@@ -298,11 +306,18 @@
 </div>
 
 <Separator />
-  
-  <div class="p-6">
-    <ImageGallery {images} />
-  </div>
-  
+
+<div class = "flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
+<h3
+  class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
+>
+  Image Gallery
+</h3>
+</div>
+
+<div class="p-6">
+  <ImageGallery {images} />
+</div>
 
 <div
   class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
@@ -341,7 +356,7 @@
 <Separator />
 
 <div
-  class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32 "
+  class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
 >
   <h2
     class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
@@ -406,7 +421,7 @@
   </div>
 
   <h2
-    class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10 "
+    class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
   >
     Special Thanks
   </h2>
@@ -419,12 +434,12 @@
     />
   </div>
 
-  <div class="white-space: pre-line grid md:grid-cols-2 grid-cols-2 md:px-20 px-5 md:pt-20 pt-5">
-
+  <div
+    class="white-space: pre-line grid md:grid-cols-2 grid-cols-2 md:px-20 px-5 md:pt-20 pt-5"
+  >
     {#each specialThanks as sT}
-        <p class="justify-self-center text-xl">{sT.name}</p>
+      <p class="justify-self-center text-xl">{sT.name}</p>
     {/each}
-
   </div>
 </div>
 

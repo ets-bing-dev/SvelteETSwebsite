@@ -13,14 +13,18 @@
   };
 </script>
 
-<div class="flex flex-col items-center justify-center max-w-4xl mx-auto px-4 h-[760px]">
+<div
+  class="flex flex-col items-center justify-center max-w-4xl mx-auto px-4 h-[760px]"
+>
   <!-- Image Container -->
-  <div class="relative w-full h-full rounded-xl overflow-hidden flex items-center justify-center">
+  <div
+    class="relative w-full h-full rounded-xl overflow-hidden flex items-center justify-center"
+  >
     {#each images as image, index}
       {#if index === currentIndex}
         <img
           src={image.path}
-          alt="Gallery Image"
+          alt={image.title}
           class="absolute inset-0 w-full h-full object-contain rounded-xl shadow-md z-0"
           style="border: 10px solid black"
           transition:fade={{ duration: 1000 }}
@@ -62,10 +66,18 @@
   <div class="mt-4 flex space-x-2">
     {#each images as _, index}
       <div
-        class="h-2 w-2 rounded-full cursor-pointer"
+        role="button"
+        tabindex="0"
+        aria-label="Go to image {index + 1}"
+        class="h-2 w-2 rounded-full cursor-pointer outline-none focus:ring-2 focus:ring-white"
         class:bg-gray-400={currentIndex !== index}
         class:bg-gray-800={currentIndex === index}
         on:click={() => (currentIndex = index)}
+        on:keydown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            currentIndex = index;
+          }
+        }}
       ></div>
     {/each}
   </div>
