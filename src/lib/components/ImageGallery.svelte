@@ -1,6 +1,4 @@
 <script>
-  import { fade } from "svelte/transition";
-
   export let images = [];
   let currentIndex = 0;
 
@@ -13,23 +11,16 @@
   };
 </script>
 
-<div
-  class="flex flex-col items-center justify-center max-w-4xl mx-auto px-4 h-[760px]"
->
-  <!-- Image Container -->
-  <div
-    class="relative w-full h-full rounded-xl overflow-hidden flex items-center justify-center"
-  >
+<div class="flex flex-col items-center justify-center max-w-4xl mx-auto px-4">
+  <!-- Responsive image container -->
+  <div class="relative w-full aspect-[4/3] sm:aspect-[16/9] flex items-center justify-center overflow-hidden rounded-2xl bg-[#1a171a]">
     {#each images as image, index}
-      {#if index === currentIndex}
-        <img
-          src={image.path}
-          alt={image.title}
-          class="absolute inset-0 w-full h-full object-contain rounded-xl shadow-md z-0"
-          style="border: 10px solid black"
-          transition:fade={{ duration: 1000 }}
-        />
-      {/if}
+      <img
+        src={image.path}
+        alt={image.title}
+        class="absolute inset-0 w-full h-full object-cover rounded-xl border-[4px] sm:border-[6px] lg:border-[8px] border-black shadow-md"
+        style="transition: opacity 1s ease-in-out; opacity: {index === currentIndex ? 1 : 0};"
+      />
     {/each}
 
     <!-- Navigation Buttons -->
@@ -37,25 +28,26 @@
       <button
         on:click={prevImage}
         class="bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white p-3 text-4xl rounded-full"
+        style = "filter: drop-shadow(0px 5px 1px rgba(0,0,0,1));"
       >
         {"<"}
       </button>
       <button
         on:click={nextImage}
         class="bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white p-3 text-4xl rounded-full"
+        style = "filter: drop-shadow(0 5px 1px rgba(0,0,0,1));"
       >
         {">"}
       </button>
     </div>
   </div>
 
-  <!-- Title (Fade between titles without layout shift) -->
+  <!-- Title transition using inline style -->
   <div class="relative w-full mt-6 h-[3.5rem] md:h-[4.5rem]">
     {#each images as image, index}
       <h3
-        class="absolute inset-0 flex italic items-center justify-center text-white font-plex-mono text-2xl md:text-4xl transition-opacity duration-1000 ease-in-out"
-        class:opacity-100={index === currentIndex}
-        class:opacity-0={index !== currentIndex}
+        class="absolute inset-0 flex italic items-center justify-center text-white font-plex-mono text-2xl md:text-4xl "
+        style="transition: opacity 1s ease-in-out; opacity: {index === currentIndex ? 1 : 0};"
       >
         {image.title}
       </h3>

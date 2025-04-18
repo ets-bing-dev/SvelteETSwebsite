@@ -194,7 +194,7 @@
   class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
 >
   <h2
-    class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
+    class="flex md:text-5xl text-2xl w-full items-end md:pt-0 pt-10"
   >
     About the Competition
   </h2>
@@ -223,7 +223,7 @@
   </div>
 
   <!-- Card Section -->
-  <div class="flex justify-center mt-10 p-15 gap-6">
+  <div class="flex grid md:grid-cols-3 grid-cols-1 justify-center mt-10 pl-9 gap-6">
     <img
       src="/designersedge/info1.png"
       alt="info"
@@ -240,8 +240,9 @@
       class="w-full max-w-sm rounded-md shadow-md"
     />
   </div>
+  <Separator />
   <h3
-    class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
+    class="flex md:text-5xl text-2xl w-full items-end "
   >
     Award Recipients
   </h3>
@@ -261,7 +262,7 @@
   </h2>
 
   <!-- collab imgs -->
-  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+  <div class="flex grid md:grid-cols-3 grid-cols-1 justify-items-center mt-10 p-15 gap-7 opacity-80 glowing-image">
     <img
       src="/designersedge/sponsor1.png"
       alt="sponsor"
@@ -284,7 +285,7 @@
   </h2>
 
   <!-- collab imgs -->
-  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+  <div class="flex grid md:grid-cols-3 grid-cols-1 justify-items-center mt-10 p-15 gap-7 opacity-80 glowing-image">
     <img
       src="/designersedge/collab1.png"
       alt="collab"
@@ -301,7 +302,7 @@
       class="h-full max-w-xs rounded-xl shadow-md"
     />
   </div>
-  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+  <div class="flex grid md:grid-cols-2 grid-cols-1 justify-items-center mt-10 p-15 gap-y-7 opacity-80 glowing-image">
     <img
       src="/designersedge/collab4.png"
       alt="collab"
@@ -386,26 +387,26 @@
   </h2>
 
   <!-- collab imgs -->
-  <div class="flex justify-center mt-10 p-15 gap-6 dropShadow-glow">
+  <div class="flex grid md:grid-cols-4 grid-cols-1 justify-items-center mt-10 p-15 gap-6 dropShadow-glow">
     <img
       src="/designersedge/poster1.jpg"
       alt="poster"
-      class="w-full max-w-xs rounded-xl shadow-md"
+      class="w-full max-w-xs h-auto aspect-[4/5]  rounded-xl shadow-md"
     />
     <img
       src="/designersedge/poster2.png"
       alt="poster"
-      class="w-full max-w-xs rounded-xl shadow-md"
+      class="w-full max-w-xs h-auto aspect-[4/5] rounded-xl shadow-md"
     />
     <img
       src="/designersedge/poster3.png"
       alt="poster"
-      class="w-full max-w-xs rounded-xl shadow-md"
+      class="w-full max-w-xs h-auto aspect-[4/5] rounded-xl shadow-md"
     />
     <img
       src="/designersedge/poster4.PNG"
       alt="poster"
-      class="w-full max-w-xs rounded-xl shadow-md"
+      class="w-full max-w-xs h-auto aspect-[4/5] rounded-xl shadow-md"
     />
   </div>
 </div>
@@ -558,7 +559,7 @@ border-radius: 8px; will-change: transform;"
     FAQ
   </h2>
   <!-- FAQ Section -->
-  <div class="font-normal flex md:flex-col flex-row mt-4">
+  <div class="flex grid md:grid-cols-1 grid-cols-1 justify-items-centerfont-normal flex md:flex-col flex-row mt-4">
     {#each faqInfo as info}
       <div class="flex flex-col md:gap-6 gap-4 md:pt-10 pt-5 md:px-20 px-10">
         <p class="text-green text-2xl font-bold">{info.question}</p>
