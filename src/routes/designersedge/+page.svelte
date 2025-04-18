@@ -194,7 +194,7 @@
   class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
 >
   <h2
-    class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
+    class="flex md:text-5xl text-2xl w-full items-end md:pt-0 pt-10"
   >
     About the Competition
   </h2>
@@ -223,7 +223,7 @@
   </div>
 
   <!-- Card Section -->
-  <div class="flex justify-center mt-10 p-15 gap-6">
+  <div class="flex grid md:grid-cols-3 grid-cols-1 justify-center mt-10 pl-9 gap-6">
     <img
       src="/designersedge/info1.png"
       alt="info"
@@ -240,8 +240,9 @@
       class="w-full max-w-sm rounded-md shadow-md"
     />
   </div>
+  <Separator />
   <h3
-    class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
+    class="flex md:text-5xl text-2xl w-full items-end "
   >
     Award Recipients
   </h3>
