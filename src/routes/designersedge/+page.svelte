@@ -302,7 +302,7 @@
       class="h-full max-w-xs rounded-xl shadow-md"
     />
   </div>
-  <div class="flex grid md:grid-cols-2 grid-cols-1 justify-items-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+  <div class="flex grid md:grid-cols-2 grid-cols-1 justify-items-center mt-10 p-15 gap-y-7 opacity-80 glowing-image">
     <img
       src="/designersedge/collab4.png"
       alt="collab"
