@@ -13,14 +13,27 @@
   ];
 
   let specialThanks = [
-    { name: "THE HACKBU TEAM" },
-    { name: "GARY DEWEY" },
     { name: "JAMES PITARRESI" },
     { name: "SHANA M. WHITE" },
     { name: "ERIN CODY" },
     { name: "CHRISTOPHER ROBBINS" },
     { name: "NICOLE ALFARANO" },
     { name: "YADID ORLOW" },
+  ];
+
+  let ETSTeam = [
+    { name: "GARY DEWEY" },
+    { name: "VAN JAMES HUYNH" },
+    { name: "PAUL AMPADU" },
+    { name: "WINNE YONG" },
+    { name: "RACHEL KOPPELMAN" },
+    { name: "SAM ABRAMSON" },
+    { name: "JAKE DIGIUGNO" },
+    { name: "TIMOTHY TRAN" },
+    { name: "ERICK PALKA" },
+    { name: "NATHAN TEIG" },
+    { name: "STELLA HUNG" },
+    { name: "DAVID PONCÉ" },
   ];
 
   const images = [
@@ -38,6 +51,10 @@
     {
       path: "/images/DE2025Winners/UIUXWinners.png",
       title: "Best UI / UX Winners",
+    },
+    {
+      path: "/images/DE2025Winners/BestAI.jpg",
+      title: "Best AI Winner",
     },
     // add your image paths here
   ];
@@ -223,101 +240,141 @@
       class="w-full max-w-sm rounded-md shadow-md"
     />
   </div>
-
   <h3
     class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
   >
-    Opening Ceremony Slides
+    Award Recipients
   </h3>
 
-  <!-- <div class="ml-10 md:mt-16 justify-left flex w-screen h-screen">
-        <iframe
-          title="opening ceremony"
-          src="https://docs.google.com/presentation/d/e/2PACX-1vThxsxuF-InnZ60ef3LGzN8Qe0rYRURhWB0SDZAU6WF1_ZwycjYe6YOnxygaPPb9Q/embed?start=false&loop=true&delayms=3000"
-          frameborder="0"
-          width="85%"
-          height="75%"
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true"
-        >
-        </iframe>
-      </div> -->
-
-  <div
-    style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
-     padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-     border-radius: 8px; will-change: transform;"
-  >
-    <iframe
-      title="opening ceremony"
-      loading="lazy"
-      style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-      src="https://www.canva.com/design/DAGjmnqpS7Q/4O2Nc53I9s46sermFeRHlg/view?embed"
-      allowfullscreen="allowfullscreen"
-      allow="fullscreen"
-    >
-    </iframe>
+  <div class="p-6">
+    <ImageGallery {images} />
   </div>
-  <!-- <a
-        href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGjmnqpS7Q&#x2F;4O2Nc53I9s46sermFeRHlg&#x2F;view?utm_content=DAGjmnqpS7Q&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
-        target="_blank"
-        rel="noopener">Opening Ceremony Slides</a
-      >
-      by Emerging Technology Studio -->
-
-  <h3
-    class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
-  >
-    Closing Ceremony Slides
-  </h3>
-
-  <!-- <div class="ml-10 md:mt-16 justify-left flex w-screen h-screen">
-        <iframe
-          src="https://docs.google.com/presentation/d/e/2PACX-1vSI95x9tOjsHeaQrNtOgPKYvVdkuSa27vHzqractu66PZ6C2Zq1UXQwrSS8KgBsKQ/pubembed?start=false&loop=true&delayms=3000"
-          frameborder="0"
-          width="85%"
-          height="75%"
-          allowfullscreen="true"
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true"
-        >
-        </iframe>
-      </div> -->
-  <div
-    style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
-     padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-     border-radius: 8px; will-change: transform;"
-  >
-    <iframe
-      title="closing ceremony"
-      loading="lazy"
-      style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-      src="https://www.canva.com/design/DAGjsg3ZoLE/pr3pEnmg3L3y1aVS3lLBkw/view?embed"
-      allowfullscreen="allowfullscreen"
-      allow="fullscreen"
-    >
-    </iframe>
-  </div>
-  <!-- <a
-        href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGjsg3ZoLE&#x2F;pr3pEnmg3L3y1aVS3lLBkw&#x2F;view?utm_content=DAGjsg3ZoLE&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
-        target="_blank"
-        rel="noopener">Closing Ceremony Slides</a
-      > by Emerging Technology Studio -->
 </div>
 
 <Separator />
 
-<div class = "flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32">
-<h3
-  class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
+<div
+  class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5"
 >
-  Image Gallery
-</h3>
+  <h2 class="flex md:text-5xl text-3xl w-full items-end md:pt-0 pt-10">
+    Sponsors
+  </h2>
+
+  <!-- collab imgs -->
+  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+    <img
+      src="/designersedge/sponsor1.png"
+      alt="sponsor"
+      class="h-full max-w-xs rounded-xl shadow-md"
+    />
+    <img
+      src="/designersedge/sponsor2.png"
+      alt="sponsor"
+      class="h-full max-w-xs rounded-xl shadow-md"
+    />
+    <img
+      src="/designersedge/sponsor3.png"
+      alt="sponsor"
+      class="h-full max-w-xs rounded-xl shadow-md"
+    />
+  </div>
+  <Separator />
+  <h2 class="flex md:text-5xl text-3xl w-full items-end md:pt-0 pt-10">
+    Collaborators
+  </h2>
+
+  <!-- collab imgs -->
+  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+    <img
+      src="/designersedge/collab1.png"
+      alt="collab"
+      class="h-full max-w-xs rounded-xl shadow-md"
+    />
+    <img
+      src="/designersedge/collab2.png"
+      alt="collab"
+      class="h-full max-w-xs rounded-xl shadow-md"
+    />
+    <img
+      src="/designersedge/collab3.png"
+      alt="collab"
+      class="h-full max-w-xs rounded-xl shadow-md"
+    />
+  </div>
+  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+    <img
+      src="/designersedge/collab4.png"
+      alt="collab"
+      class="h-full max-w-xs rounded-xl shadow-md"
+    />
+    <img
+      src="/designersedge/collab5.png"
+      alt="collab"
+      class="h-full max-w-xs rounded-xl shadow-md"
+    />
+  </div>
+  <Separator />
+  <h2 class="flex md:text-5xl text-3xl w-full items-end md:pt-0 pt-10">
+    Special Thanks
+  </h2>
+
+  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+    <img
+      src="/designersedge/thanks1.png"
+      alt="collab"
+      class="h-full max-w-xs rounded-xl shadow-md"
+    />
+  </div>
+  <div
+    class="white-space: pre-line grid md:grid-cols-1 grid-cols-1 md:px-20 px-5 md:pt-10 pt-5"
+  >
+    <h3 class="flex md:text-3xl text-2xl justify-self-center">
+      THE HACKBU TEAM
+    </h3>
+  </div>
+  <Separator />
+  <h3 class="flex md:text-3xl text-2xl">
+    Organizers
+  </h3>
+  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+    <img
+      src="images/DE2025Winners/Organizers.jpg"
+      alt="collab"
+      class="h-full max-w-md rounded-xl shadow-md"
+    />
+  </div>
+  <div
+    class="white-space: pre-line grid md:grid-cols-1 grid-cols-1 md:px-20 px-5 md:pt-10 pt-5"
+  >
+    <h3 class="flex md:text-3xl text-2xl justify-self-center">
+      Daniel and Joanna
+    </h3>
+  </div>
+  <Separator />
+  <h3 class="flex md:text-3xl text-2xl w-full items-end md:pt-0 pt-10">
+    Faculty/Contributors
+  </h3>
+  <div
+    class="white-space: pre-line grid md:grid-cols-2 grid-cols-2 md:px-20 px-5 md:pt-10 pt-5"
+  >
+    {#each specialThanks as sT}
+      <p class="justify-self-center text-xl">{sT.name}</p>
+    {/each}
+  </div>
+  <Separator />
+  <h3 class="flex md:text-3xl text-2xl w-full items-end md:pt-0 pt-10">
+    The ETS Team
+  </h3>
+  <div
+    class="white-space: pre-line grid md:grid-cols-2 grid-cols-2 md:px-20 px-5 md:pt-10 pt-5"
+  >
+    {#each ETSTeam as ets}
+      <p class="justify-self-center text-xl">{ets.name}</p>
+    {/each}
+  </div>
 </div>
 
-<div class="p-6">
-  <ImageGallery {images} />
-</div>
+<Separator />
 
 <div
   class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
@@ -353,95 +410,113 @@
   </div>
 </div>
 
-<Separator />
-
 <div
   class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
 >
-  <h2
-    class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
-  >
-    Sponsors
-  </h2>
-
-  <!-- collab imgs -->
-  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
-    <img
-      src="/designersedge/sponsor1.png"
-      alt="sponsor"
-      class="h-full max-w-xs rounded-xl shadow-md"
-    />
-    <img
-      src="/designersedge/sponsor2.png"
-      alt="sponsor"
-      class="h-full max-w-xs rounded-xl shadow-md"
-    />
-    <img
-      src="/designersedge/sponsor3.png"
-      alt="sponsor"
-      class="h-full max-w-xs rounded-xl shadow-md"
-    />
-  </div>
-
-  <h2
-    class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
-  >
-    Collaborators
-  </h2>
-
-  <!-- collab imgs -->
-  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
-    <img
-      src="/designersedge/collab1.png"
-      alt="collab"
-      class="h-full max-w-xs rounded-xl shadow-md"
-    />
-    <img
-      src="/designersedge/collab2.png"
-      alt="collab"
-      class="h-full max-w-xs rounded-xl shadow-md"
-    />
-    <img
-      src="/designersedge/collab3.png"
-      alt="collab"
-      class="h-full max-w-xs rounded-xl shadow-md"
-    />
-  </div>
-  <div class="flex justify-center mt-10 p-15 gap-7 glowing-image">
-    <img
-      src="/designersedge/collab4.png"
-      alt="collab"
-      class="h-full max-w-xs rounded-xl shadow-md"
-    />
-    <img
-      src="/designersedge/collab5.png"
-      alt="collab"
-      class="h-full max-w-xs rounded-xl shadow-md"
-    />
-  </div>
-
-  <h2
-    class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
-  >
-    Special Thanks
-  </h2>
-
-  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
-    <img
-      src="/designersedge/thanks1.png"
-      alt="collab"
-      class="h-full max-w-xs rounded-xl shadow-md"
-    />
-  </div>
-
+<h3
+      class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
+    >
+      Designer's Edge 2025 Recap
+    </h3>
   <div
-    class="white-space: pre-line grid md:grid-cols-2 grid-cols-2 md:px-20 px-5 md:pt-20 pt-5"
+    style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+border-radius: 8px; will-change: transform;"
   >
-    {#each specialThanks as sT}
-      <p class="justify-self-center text-xl">{sT.name}</p>
-    {/each}
+    <iframe
+      loading="lazy"
+      style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+      src="https://www.canva.com/design/DAGk6sy-Lug/Zjlboh8yPk5hRFDQ7l4fAw/view?embed"
+      allowfullscreen="allowfullscreen"
+      allow="fullscreen"
+    >
+    </iframe>
   </div>
 </div>
+
+<!-- <div
+  class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
+>
+  <h3
+    class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
+  >
+    Opening Ceremony Slides
+  </h3>
+
+  <div class="ml-10 md:mt-16 justify-left flex w-screen h-screen">
+        <iframe
+          title="opening ceremony"
+          src="https://docs.google.com/presentation/d/e/2PACX-1vThxsxuF-InnZ60ef3LGzN8Qe0rYRURhWB0SDZAU6WF1_ZwycjYe6YOnxygaPPb9Q/embed?start=false&loop=true&delayms=3000"
+          frameborder="0"
+          width="85%"
+          height="75%"
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+        >
+        </iframe>
+      </div> -->
+
+  <!--  <div
+    style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+     padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+     border-radius: 8px; will-change: transform;"
+  >
+    <iframe
+      title="opening ceremony"
+      loading="lazy"
+      style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+      src="https://www.canva.com/design/DAGjmnqpS7Q/4O2Nc53I9s46sermFeRHlg/view?embed"
+      allowfullscreen="allowfullscreen"
+      allow="fullscreen"
+    >
+    </iframe>
+  </div> -->
+  <!-- <a
+        href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGjmnqpS7Q&#x2F;4O2Nc53I9s46sermFeRHlg&#x2F;view?utm_content=DAGjmnqpS7Q&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+        target="_blank"
+        rel="noopener">Opening Ceremony Slides</a
+      >
+      by Emerging Technology Studio -->
+
+  <!--  <h3
+    class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
+  >
+    Closing Ceremony Slides
+  </h3> -->
+
+  <!-- <div class="ml-10 md:mt-16 justify-left flex w-screen h-screen">
+        <iframe
+          src="https://docs.google.com/presentation/d/e/2PACX-1vSI95x9tOjsHeaQrNtOgPKYvVdkuSa27vHzqractu66PZ6C2Zq1UXQwrSS8KgBsKQ/pubembed?start=false&loop=true&delayms=3000"
+          frameborder="0"
+          width="85%"
+          height="75%"
+          allowfullscreen="true"
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+        >
+        </iframe>
+      </div> -->
+  <!--  <div
+    style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+     padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+     border-radius: 8px; will-change: transform;"
+  >
+    <iframe
+      title="closing ceremony"
+      loading="lazy"
+      style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+      src="https://www.canva.com/design/DAGjsg3ZoLE/pr3pEnmg3L3y1aVS3lLBkw/view?embed"
+      allowfullscreen="allowfullscreen"
+      allow="fullscreen"
+    >
+    </iframe>
+  </div> -->
+  <!-- <a
+        href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGjsg3ZoLE&#x2F;pr3pEnmg3L3y1aVS3lLBkw&#x2F;view?utm_content=DAGjsg3ZoLE&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+        target="_blank"
+        rel="noopener">Closing Ceremony Slides</a
+      > by Emerging Technology Studio
+</div>-->
 
 <!-- Registration Form -->
 

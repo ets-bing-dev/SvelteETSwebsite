@@ -53,7 +53,7 @@
   <div class="relative w-full mt-6 h-[3.5rem] md:h-[4.5rem]">
     {#each images as image, index}
       <h3
-        class="absolute inset-0 flex items-center justify-center text-white font-plex-mono text-2xl md:text-4xl font-bold transition-opacity duration-1000 ease-in-out"
+        class="absolute inset-0 flex italic items-center justify-center text-white font-plex-mono text-2xl md:text-4xl transition-opacity duration-1000 ease-in-out"
         class:opacity-100={index === currentIndex}
         class:opacity-0={index !== currentIndex}
       >
