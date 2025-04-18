@@ -262,7 +262,7 @@
   </h2>
 
   <!-- collab imgs -->
-  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+  <div class="flex grid md:grid-cols-3 grid-cols-1 justify-items-center mt-10 p-15 gap-7 opacity-80 glowing-image">
     <img
       src="/designersedge/sponsor1.png"
       alt="sponsor"
@@ -285,7 +285,7 @@
   </h2>
 
   <!-- collab imgs -->
-  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+  <div class="flex grid md:grid-cols-3 grid-cols-1 justify-items-center mt-10 p-15 gap-7 opacity-80 glowing-image">
     <img
       src="/designersedge/collab1.png"
       alt="collab"
@@ -302,7 +302,7 @@
       class="h-full max-w-xs rounded-xl shadow-md"
     />
   </div>
-  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+  <div class="flex grid md:grid-cols-2 grid-cols-1 justify-items-center mt-10 p-15 gap-7 opacity-80 glowing-image">
     <img
       src="/designersedge/collab4.png"
       alt="collab"
@@ -387,26 +387,26 @@
   </h2>
 
   <!-- collab imgs -->
-  <div class="flex justify-center mt-10 p-15 gap-6 dropShadow-glow">
+  <div class="flex grid md:grid-cols-4 grid-cols-1 justify-items-center mt-10 p-15 gap-6 dropShadow-glow">
     <img
       src="/designersedge/poster1.jpg"
       alt="poster"
-      class="w-full max-w-xs rounded-xl shadow-md"
+      class="w-full max-w-xs h-auto aspect-[4/5]  rounded-xl shadow-md"
     />
     <img
       src="/designersedge/poster2.png"
       alt="poster"
-      class="w-full max-w-xs rounded-xl shadow-md"
+      class="w-full max-w-xs h-auto aspect-[4/5] rounded-xl shadow-md"
     />
     <img
       src="/designersedge/poster3.png"
       alt="poster"
-      class="w-full max-w-xs rounded-xl shadow-md"
+      class="w-full max-w-xs h-auto aspect-[4/5] rounded-xl shadow-md"
     />
     <img
       src="/designersedge/poster4.PNG"
       alt="poster"
-      class="w-full max-w-xs rounded-xl shadow-md"
+      class="w-full max-w-xs h-auto aspect-[4/5] rounded-xl shadow-md"
     />
   </div>
 </div>
@@ -559,7 +559,7 @@ border-radius: 8px; will-change: transform;"
     FAQ
   </h2>
   <!-- FAQ Section -->
-  <div class="font-normal flex md:flex-col flex-row mt-4">
+  <div class="flex grid md:grid-cols-1 grid-cols-1 justify-items-centerfont-normal flex md:flex-col flex-row mt-4">
     {#each faqInfo as info}
       <div class="flex flex-col md:gap-6 gap-4 md:pt-10 pt-5 md:px-20 px-10">
         <p class="text-green text-2xl font-bold">{info.question}</p>
