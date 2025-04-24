@@ -16,7 +16,7 @@
     video = "videos/newTechVid.webm"
     header = "TECHNOLOGY OVERVIEW"
     subheaderone = "Come visit us at the Technology Hub!"
-    paragraphone = "Walk-ins are encouraged! Email us at ets@binghamton.edu if you want to learn about a specific skill, software, or technology. All Binghamton University students, staff, and faculty are welcome!"
+    paragraphone = "Walk-ins are encouraged! Email us at etsbing@binghamton.edu if you want to learn about a specific skill, software, or technology. All Binghamton University students, staff, and faculty are welcome!"
     subheadertwo = "Services Available"
     paragraphtwo = "&#8226; Soldering Equipment 
 &#8226; Meta Quest 3s
