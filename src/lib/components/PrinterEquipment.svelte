@@ -30,15 +30,15 @@
             image = {mk4}
             header = "Prusa MK4"
             link="https://www.prusa3d.com/product/original-prusa-mk4s-3d-printer-5/"
-            description = "(180mm x 180mm x 180mm)"
+            description = "(250mm x 210mm x 220mm)"
             />
 
-            <!-- <IndividualEquipment
+            <IndividualEquipment
             image = {voron}
             header = "Voron 2.4"
             link="https://vorondesign.com/voron2.4"
             description = "(360mm x 350mm x 350mm)"
-            /> -->
+            />
 
             <IndividualEquipment
             image = {x1}
