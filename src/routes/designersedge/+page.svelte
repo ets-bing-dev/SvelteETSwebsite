@@ -223,7 +223,7 @@
   </div>
 
   <!-- Card Section -->
-  <div class="flex grid md:grid-cols-3 grid-cols-1 justify-center mt-10 pl-9 gap-6">
+  <div class="flex grid md:grid-cols-3 grid-cols-1 justify-items-center mt-10">
     <img
       src="/designersedge/info1.png"
       alt="info"
@@ -266,17 +266,20 @@
     <img
       src="/designersedge/sponsor1.png"
       alt="sponsor"
-      class="h-full max-w-xs rounded-xl shadow-md"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
     />
     <img
       src="/designersedge/sponsor2.png"
       alt="sponsor"
-      class="h-full max-w-xs rounded-xl shadow-md"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
     />
     <img
       src="/designersedge/sponsor3.png"
       alt="sponsor"
-      class="h-full max-w-xs rounded-xl shadow-md"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
     />
   </div>
   <Separator />
@@ -289,29 +292,34 @@
     <img
       src="/designersedge/collab1.png"
       alt="collab"
-      class="h-full max-h-xs max-w-xs rounded-xl shadow-md"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
     />
     <img
       src="/designersedge/collab2.png"
       alt="collab"
-      class="h-full max-w-xs rounded-xl shadow-md"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
     />
     <img
       src="/designersedge/collab3.png"
       alt="collab"
-      class="h-full max-w-xs rounded-xl shadow-md"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
     />
   </div>
   <div class="flex grid md:grid-cols-2 grid-cols-1 justify-items-center mt-10 p-15 gap-y-7 opacity-80 glowing-image">
     <img
       src="/designersedge/collab4.png"
       alt="collab"
-      class="h-full max-w-xs rounded-xl shadow-md"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
     />
     <img
       src="/designersedge/collab5.png"
       alt="collab"
-      class="h-full max-w-xs max-h-xs rounded-xl shadow-md"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
     />
   </div>
   <Separator />
@@ -323,7 +331,8 @@
     <img
       src="/designersedge/thanks1.png"
       alt="collab"
-      class="h-full max-w-xs rounded-xl shadow-md"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
     />
   </div>
   <div
@@ -340,8 +349,9 @@
   <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
     <img
       src="images/DE2025Winners/Organizers.jpg"
-      alt="collab"
-      class="h-full max-w-md rounded-xl shadow-md"
+      alt="organizers"
+      class="aspect-[4/3] rounded-xl shadow-md"
+      style="max-height: 400px"
     />
   </div>
   <div

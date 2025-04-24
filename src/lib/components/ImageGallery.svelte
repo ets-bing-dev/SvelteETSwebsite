@@ -18,8 +18,8 @@
       <img
         src={image.path}
         alt={image.title}
-        class="absolute inset-0 w-full h-full object-cover rounded-xl border-[4px] sm:border-[6px] lg:border-[8px] border-black shadow-md"
-        style="transition: opacity 1s ease-in-out; opacity: {index === currentIndex ? 1 : 0};"
+        class="absolute inset-0 w-full h-full object-cover rounded-xl shadow-md border-[4px] sm:border-[6px] lg:border-[8px] border-darker-gray"
+        style=" transition: opacity 1s ease-in-out; opacity: {index === currentIndex ? 1 : 0};"
       />
     {/each}
 
