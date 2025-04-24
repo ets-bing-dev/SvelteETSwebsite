@@ -1,6 +1,7 @@
 <script>
   import Separator from "$lib/components/Separator.svelte";
   import ImageGallery from "$lib/components/ImageGallery.svelte";
+  import Gallery from "$lib/components/Gallery.svelte";
   const formUrl = "https://forms.gle/HxASYdmcsKcadv9CA";
   const pcUrl = "https://forms.gle/epoRDHjzYsA8v5Z66";
 
@@ -34,6 +35,8 @@
     { name: "NATHAN TEIG" },
     { name: "STELLA HUNG" },
     { name: "DAVID PONCÉ" },
+    { name: "BIANNA CHEN" },
+    { name: "REBECCA JANG" },
   ];
 
   const images = [
@@ -191,11 +194,9 @@
 <Separator />
 
 <div
-  class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
+  class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 "
 >
-  <h2
-    class="flex md:text-5xl text-2xl w-full items-end md:pt-0 pt-10"
-  >
+  <h2 class="flex md:text-5xl text-2xl w-full items-end md:pt-0 pt-10">
     About the Competition
   </h2>
 
@@ -241,14 +242,21 @@
     />
   </div>
   <Separator />
-  <h3
-    class="flex md:text-5xl text-2xl w-full items-end "
-  >
-    Award Recipients
-  </h3>
+  <h3 class="flex md:text-5xl text-2xl w-full items-end">Award Recipients</h3>
 
   <div class="p-6">
     <ImageGallery {images} />
+  </div>
+</div>
+
+<Separator />
+
+<div
+  class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5"
+>
+  <h3 class="flex md:text-5xl text-2xl w-full items-end">Image Gallery</h3>
+  <div class="p-6">
+    <Gallery />
   </div>
 </div>
 
@@ -262,7 +270,9 @@
   </h2>
 
   <!-- collab imgs -->
-  <div class="flex grid md:grid-cols-3 grid-cols-1 justify-items-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+  <div
+    class="flex grid md:grid-cols-3 grid-cols-1 justify-items-center mt-10 p-15 gap-7 opacity-80 glowing-image"
+  >
     <img
       src="/designersedge/sponsor1.png"
       alt="sponsor"
@@ -288,7 +298,9 @@
   </h2>
 
   <!-- collab imgs -->
-  <div class="flex grid md:grid-cols-3 grid-cols-1 justify-items-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+  <div
+    class="flex grid md:grid-cols-3 grid-cols-1 justify-items-center mt-10 p-15 gap-7 opacity-80 glowing-image"
+  >
     <img
       src="/designersedge/collab1.png"
       alt="collab"
@@ -308,7 +320,9 @@
       style="max-height: 200px"
     />
   </div>
-  <div class="flex grid md:grid-cols-2 grid-cols-1 justify-items-center mt-10 p-15 gap-y-7 opacity-80 glowing-image">
+  <div
+    class="flex grid md:grid-cols-2 grid-cols-1 justify-items-center mt-10 p-15 gap-y-7 opacity-80 glowing-image"
+  >
     <img
       src="/designersedge/collab4.png"
       alt="collab"
@@ -343,9 +357,7 @@
     </h3>
   </div>
   <Separator />
-  <h3 class="flex md:text-3xl text-2xl">
-    Organizers
-  </h3>
+  <h3 class="flex md:text-3xl text-2xl">Organizers</h3>
   <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
     <img
       src="images/DE2025Winners/Organizers.jpg"
@@ -358,7 +370,7 @@
     class="white-space: pre-line grid md:grid-cols-1 grid-cols-1 md:px-20 px-5 md:pt-10 pt-5"
   >
     <h3 class="flex md:text-3xl text-2xl justify-self-center">
-      Daniel and Joanna
+      Daniel Zheng & Joanna Fishman
     </h3>
   </div>
   <Separator />
@@ -397,11 +409,13 @@
   </h2>
 
   <!-- collab imgs -->
-  <div class="flex grid md:grid-cols-4 grid-cols-1 justify-items-center mt-10 p-15 gap-6 dropShadow-glow">
+  <div
+    class="flex grid md:grid-cols-4 grid-cols-1 justify-items-center mt-10 p-15 gap-6 dropShadow-glow"
+  >
     <img
       src="/designersedge/poster1.jpg"
       alt="poster"
-      class="w-full max-w-xs h-auto aspect-[4/5]  rounded-xl shadow-md"
+      class="w-full max-w-xs h-auto aspect-[4/5] rounded-xl shadow-md"
     />
     <img
       src="/designersedge/poster2.png"
@@ -424,18 +438,18 @@
 <div
   class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
 >
-<h3
-      class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
-    >
-      Designer's Edge 2025 Recap
-    </h3>
+  <h3
+    class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
+  >
+    Designer's Edge 2025 Recap
+  </h3>
   <div
     style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
 padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
 border-radius: 8px; will-change: transform;"
   >
     <iframe
-    title = "Recap Slides"
+      title="Recap Slides"
       loading="lazy"
       style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
       src="https://www.canva.com/design/DAGk6sy-Lug/Zjlboh8yPk5hRFDQ7l4fAw/view?embed"
@@ -468,7 +482,7 @@ border-radius: 8px; will-change: transform;"
         </iframe>
       </div> -->
 
-  <!--  <div
+<!--  <div
     style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
      padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
      border-radius: 8px; will-change: transform;"
@@ -483,20 +497,20 @@ border-radius: 8px; will-change: transform;"
     >
     </iframe>
   </div> -->
-  <!-- <a
+<!-- <a
         href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGjmnqpS7Q&#x2F;4O2Nc53I9s46sermFeRHlg&#x2F;view?utm_content=DAGjmnqpS7Q&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
         target="_blank"
         rel="noopener">Opening Ceremony Slides</a
       >
       by Emerging Technology Studio -->
 
-  <!--  <h3
+<!--  <h3
     class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
   >
     Closing Ceremony Slides
   </h3> -->
 
-  <!-- <div class="ml-10 md:mt-16 justify-left flex w-screen h-screen">
+<!-- <div class="ml-10 md:mt-16 justify-left flex w-screen h-screen">
         <iframe
           src="https://docs.google.com/presentation/d/e/2PACX-1vSI95x9tOjsHeaQrNtOgPKYvVdkuSa27vHzqractu66PZ6C2Zq1UXQwrSS8KgBsKQ/pubembed?start=false&loop=true&delayms=3000"
           frameborder="0"
@@ -508,7 +522,7 @@ border-radius: 8px; will-change: transform;"
         >
         </iframe>
       </div> -->
-  <!--  <div
+<!--  <div
     style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
      padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
      border-radius: 8px; will-change: transform;"
@@ -523,7 +537,7 @@ border-radius: 8px; will-change: transform;"
     >
     </iframe>
   </div> -->
-  <!-- <a
+<!-- <a
         href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGjsg3ZoLE&#x2F;pr3pEnmg3L3y1aVS3lLBkw&#x2F;view?utm_content=DAGjsg3ZoLE&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
         target="_blank"
         rel="noopener">Closing Ceremony Slides</a
@@ -570,7 +584,9 @@ border-radius: 8px; will-change: transform;"
     FAQ
   </h2>
   <!-- FAQ Section -->
-  <div class="flex grid md:grid-cols-1 grid-cols-1 justify-items-centerfont-normal flex md:flex-col flex-row mt-4">
+  <div
+    class="flex grid md:grid-cols-1 grid-cols-1 justify-items-centerfont-normal flex md:flex-col flex-row mt-4"
+  >
     {#each faqInfo as info}
       <div class="flex flex-col md:gap-6 gap-4 md:pt-10 pt-5 md:px-20 px-10">
         <p class="text-green text-2xl font-bold">{info.question}</p>
