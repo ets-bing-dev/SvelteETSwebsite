@@ -30,17 +30,17 @@
 
 
 <style>
-    .vignette {
-      /* Firefox/Chromium */
-      mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 50%);
-      mask-repeat: no-repeat;
-      mask-position: center;
-      mask-size: cover;
-  
-      /* Safari/WebKit */
-      -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 80%);
-      -webkit-mask-repeat: no-repeat;
-      -webkit-mask-position: center;
-      -webkit-mask-size: cover;
-    }
+  .vignette {
+    -webkit-mask-image: linear-gradient(to top, transparent, black 100%, black 100%, transparent),
+                        linear-gradient(to left, transparent, black 100%, black 100%, transparent);
+    -webkit-mask-composite: intersect;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+
+    mask-image: linear-gradient(to top, transparent, black 25%, black 75%, transparent),
+                linear-gradient(to left, transparent, black 10%, black 90%, transparent);
+    mask-composite: intersect;
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+  }
   </style>
