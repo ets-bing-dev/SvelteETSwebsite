@@ -9,7 +9,7 @@
     <p class="font-space-grotesk md:text-7xl text-6xl text-lightPurple">
         You found a figet cube!
     </p>
-    <video class="md:mt-20 mt-10 rounded-lg md:w-1/4" loop autoplay playsinline disablepictureinpicture muted preload="auto">
+    <video class="vignette md:mt-20 mt-10 rounded-lg md:w-1/4" loop autoplay playsinline disablepictureinpicture muted preload="auto">
             <source src="/videos/fidgetcube.webm" type="video/webm" />
             <source src="/videos/fidgetcube.mp4" type="video/mp4; codecs=hvc1" />
     </video>
@@ -29,3 +29,18 @@
 </div>
 
 
+<style>
+    .vignette {
+      /* Firefox/Chromium */
+      mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 50%);
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: cover;
+  
+      /* Safari/WebKit */
+      -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 80%);
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      -webkit-mask-size: cover;
+    }
+  </style>
