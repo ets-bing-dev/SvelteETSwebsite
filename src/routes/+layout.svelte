@@ -1,9 +1,13 @@
+<!-- for importing 3D models -->
+
 <script>
     // @ts-ignore
     import Navbar from "$lib/components/Navbar.svelte";
     import Footer from "$lib/components/Footer.svelte";
 import "../app.css";
   </script> 
+
+
 
 <!-- src/routes/__layout.svelte -->
 <head>
