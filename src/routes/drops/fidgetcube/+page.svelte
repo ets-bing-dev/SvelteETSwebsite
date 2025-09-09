@@ -10,7 +10,8 @@
         You found a figet cube!
     </p>
     <video class="md:mt-20 mt-10 rounded-lg md:w-1/4" loop autoplay playsinline disablepictureinpicture muted preload="auto">
-        <source src="/videos/fidgetcube.webm" type="video/webm">
+            <source src="/videos/fidgetcube.webm" type="video/webm" />
+            <source src="/videos/fidgetcube.mp4" type="video/mp4; codecs=hvc1" />
     </video>
     <p class=" md:text-md mt-10 md:text-sm text-xs text-white">
         Want more? For free!? Come visit us...
