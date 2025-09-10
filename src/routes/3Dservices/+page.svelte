@@ -43,16 +43,16 @@
             <img class="h-full w-1/2 object-cover" alt="thumbnail" src={temp}/>
         </div>
         <div class="md:w-2/3 w-full h-full">
-            <p class="md:text-3xl text-lg">
+            <p class="md:text-3xl text-base">
                 Come visit us at the Technology Hub!
             </p>
-            <p class="pl-10 text-orange md:text-xl text-base">
+            <p class="pl-10 text-orange md:text-xl text-sm">
                 Walk-ins are encouraged! ALL Binghamton University students, staff, and faculty may use our resources!
             </p>
-            <p class="mt-5 italic md:text-3xl text-lg">
+            <p class="mt-5 italic md:text-3xl text-base">
                 Resources
             </p>
-            <div class="flex flex-col pl-10 text-orange md:text-xl text-base">
+            <div class="flex flex-col pl-10 text-orange md:text-xl text-sm">
                 <a href="https://www.raise3d.com/academy/a-beginners-guide-to-3d-printing/" class="hover:text-link hover:scale-105 transition-all duration-150">1. Guide to 3D Printing - <span class="italic">article</span></a>
                 <a href="https://www.youtube.com/watch?v=Vx0Z6LplaMU" class="hover:text-link hover:scale-105 transition-all duration-150">2. What is 3D Printing and How Does it Work? | Mashable Explains - <span class="italic">video</span></a>
                 <a href="https://www.thingiverse.com/" class="hover:text-link hover:scale-105 transition-all duration-150">3. Thingiverse - <span class="italic">free 3D models</span></a>

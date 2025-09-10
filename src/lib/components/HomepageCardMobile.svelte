@@ -17,12 +17,12 @@
             <p class="text-xl text-white">{header}</p>
             <p class="text-xs italic font-bold text-gray">{motto}</p>
         </div>
-        <div class="py-2 text-white flex flex-col text-xs">
+        <div class="py-2 text-white flex flex-col text-[10px]">
             <p>{one}</p>
             <p>{two}</p>
             <p>{three}</p>
         </div>
-        <div class="font-plex-mono text-orange text-xs font-bold bg-accent-purple w-fit rounded-full p-2">
+        <div class="font-plex-mono text-orange text-[10px] font-bold bg-accent-purple w-fit rounded-full p-2">
             <a href={link} class="hover:underline">
               {buttonText}
             </a>

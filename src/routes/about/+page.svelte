@@ -25,80 +25,17 @@
 <!-- Employees Section -->
 <div class="h-full w-screen grid md:grid-cols-3 grid-cols-2 md:px-20 px-5">
      <About
-     image="/images/etsvan.png"
-     name="Van James Huynh"
-     position="Director"
-     major="Industrial Systems Engineering"
-     year="Senior"
-     />
-     <About
-     image="/images/etspaulito.png"
-     name="Paul Ampadu"
-     position="ML/Computer Graphics Specialist"
-     major="Computer Science"
-     year="Senior"
-     />
-     <About
-     image="/images/etswinnie.png"
-     name="Winnie Yong"
-     position="Cricut Specialist"
-     major="Computer Science"
-     year="Senior"
-     />
-     <About
-     image="/images/etsrachel.png"
-     name="Rachel Koppelman"
-     position="Materials Specialist"
-     major="Mechanical Engineering"
-     year="Senior"
-     />
-     <About
-     image="/images/etssam.png"
-     name="Sam Abramson"
-     position="Robotics Specialist"
-     major="Mechanical Engineering"
-     year="Senior"
-     />
-     <About
-     image="/images/etsjake.png"
+     image="/images/etsjake.jpg"
      name="Jake Digiugno"
-     position="3D Engine Specialist"
+     position="Director"
      major="Computer Science"
-     year="Junior"
-     />
-     <About
-     image="/images/etstim.png"
-     name="Timothy Tran"
-     position="3D Design Specialist"
-     major="Mechanical Engineering"
-     year="Sophomore"
-     />
-     <About
-     image="/images/etserick.png"
-     name="Erick Palka"
-     position="Automotive Specialist"
-     major="Mechanical Engineering"
-     year="Sophomore"
+     year="Senior"
      />
      <About
      image="/images/etsnathan.png"
      name="Nathan Teig"
      position="Manufacturing Specialist"
      major="Mechanical Engineering"
-     year="Junior"
-     />
-     <About
-     image="/images/etsstella.png"
-     name="Stella Hung"
-     position="2D Design Specialist"
-     major="Graphic Design"
-     year="Junior"
-     />
-     <About
-     image="/images/etsjo.png"
-     name="Joanna Fishman"
-     position="Media Specialist"
-     major="Cinema"
      year="Senior"
      />
      <About
@@ -106,34 +43,51 @@
      name="David Poncé"
      position="A.I. Specialist"
      major="Computer Science"
+     year="Senior"
+     />
+     <About
+     image="/images/etstim.png"
+     name="Timothy Tran"
+     position="3D Design Specialist"
+     major="Mechanical Engineering"
      year="Junior"
      />
-</div>
-
-<Separator />
-
-<div class="h-full w-screen grid md:grid-cols-3 grid-cols-2 md:px-20 px-5">
      <About
-     image="/images/default.png"
-     name="Bianna Chen"
-     position="Technical Intern"
-     major="Computer Science"
-     year="Freshman"
+     image="/images/etserick.png"
+     name="Erick Palka"
+     position="Automotive Specialist"
+     major="Mechanical Engineering"
+     year="Junior"
      />
      <About
      image="/images/etsrebecca.png"
      name="Rebecca Jang"
-     position="Technical Intern"
+     position="Marketing Specialist"
      major="Mechanical Engineering"
-     year="Sophmore"
+     year="Junior"
      />
      <About
-     image="/images/etsdaniel.png"
-     name="Daniel Zheng"
-     position="Technical Intern"
-     major="Computer Science"
-     year="Freshman"
+     image="/images/default.png"
+     name="Leah Chow"
+     position="Design Specialist"
+     major="Graphic Design"
+     year="Junior"
      />
+     <About
+     image="/images/default.png"
+     name="Bianna Chen"
+     position="Software Specialist"
+     major="Computer Science"
+     year="Sophomore"
+     />
+     <About
+     image="/images/default.png"
+     name="Josh Song"
+     position="Resin Specialist"
+     major="Mechanical Engineering"
+     year="Sophomore"
+     />
+
 </div>
 
 <Separator />
@@ -168,14 +122,21 @@
      <p class="md:text-4xl text-xl text-white italic">
           Alumni:
      </p>
-     <div class="md:flex md:flex-row md:space-y-0 grid grid-cols-2 space-y-5 justify-between md:text-base text-xs text-orange whitespace-pre-line md:px-20 mt-5">
+     <div class="md:flex md:flex-row md:space-y-0 grid grid-cols-2 justify-between md:text-base text-xs text-orange whitespace-pre-line md:px-20 mt-5">
+     <p>
+          Van James Huynh
+          Winnie Yong
+          Rachel Koppelman
+          Paul Ampadu
+          Sam Abramson
+          Stella Hung
+          Joanna Fishman
+     </p>
      <p>
           Brian Min
           Mike Rosenberg
           Benjamin Neubardt
           Jacob Richman
-     </p>
-     <p>
           Cammie Summers
           David Demetros
           James Kaminski
