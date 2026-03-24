@@ -12,6 +12,7 @@
         flex-direction: column;
         align-items: center; 
         justify-content: flex-start; 
+        aspect-ratio: 1 / 1; 
         height: 100%; 
         margin: 10px; 
         text-align: center; 
@@ -19,20 +20,19 @@
 
     .image-container {
         width: 100%;
-        max-width: 300px; 
-        height: auto; 
-        overflow: hidden; 
+        max-width: 300px;
+        aspect-ratio: 1 / 1;   
+        overflow: hidden;
         display: flex;
         justify-content: center;
-        align-items: center; 
-        margin-bottom: 10px;
+        align-items: center;
     }
 
     .equipment-image {
-        width: 100%; 
-        height: auto; 
-        object-fit: cover; 
-        border-radius: 8px; 
+        width: 100%;
+        height: 100%;
+        object-fit: contain;     
+        border-radius: 8px;
     }
 
     .equipment-info {

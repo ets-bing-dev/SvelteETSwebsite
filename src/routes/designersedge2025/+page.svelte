@@ -5,7 +5,6 @@
   const formUrl = "https://forms.gle/HxASYdmcsKcadv9CA";
   const pcUrl = "https://forms.gle/epoRDHjzYsA8v5Z66";
 
-
   // info section details
   let details = [
     { title: "30 HOURS", subtitle: "of designing" },
@@ -20,14 +19,21 @@
     { name: "ERIN CODY" },
     { name: "CHRISTOPHER ROBBINS" },
     { name: "NICOLE ALFARANO" },
+    { name: "YADID ORLOW" },
   ];
 
   let ETSTeam = [
     { name: "GARY DEWEY" },
+    { name: "VAN JAMES HUYNH" },
+    { name: "PAUL AMPADU" },
+    { name: "WINNE YONG" },
+    { name: "RACHEL KOPPELMAN" },
+    { name: "SAM ABRAMSON" },
     { name: "JAKE DIGIUGNO" },
+    { name: "TIMOTHY TRAN" },
     { name: "ERICK PALKA" },
     { name: "NATHAN TEIG" },
-    { name: "LEAH CHOW" },
+    { name: "STELLA HUNG" },
     { name: "DAVID PONCÉ" },
     { name: "BIANNA CHEN" },
     { name: "REBECCA JANG" },
@@ -95,7 +101,7 @@
     {
       question: "Who can participate?",
       answer:
-        "Any Binghamton student of any major and year can participate as long as they’re interested! No prior experience is necessary.",
+        "Any Binghamton student of any major and year can participate as long as they’re interested! No prior experience is necessary and we will have a novice and experienced bracket for people to compete in.",
     },
     {
       question: "Will there be food?",
@@ -111,31 +117,12 @@
 </script>
 
 <!-- Header Section -->
-<div
-  class="flex flex-col h-screen w-screen text-orange text-center font-bold items-center justify-center"
->
-  <p class="md:text-3xl text-xl">join us at...</p>
-  <p class="font-space-grotesk md:text-7xl text-4xl font-extrabold">
-    Designer's Edge!
-  </p>
-  <a href="/designersedge2025" class="transition duration-300 ease-in-out hover:scale-110 hover:underline mt-10 text-lg text-white font-light italic">DE 2025 Recap</a>
-  <p class="md:mt-30 mt-10 md:text-2xl text-lg text-green">
-    where Emerging Tech meets Design @ our Designer’s Competition!
-  </p>
-
-
-  <!-- Info Section -->
-  <div
-    class="flex md:flex-row flex-col gap-10 mt-4 items-center justify-center"
-  >
-    {#each details as detail}
-      <div class="flex flex-col items-center text-center">
-        <div class="w-40 h-5 bg-accent-purple rounded-full mb-2"></div>
-        <p class="text-green text-2xl font-bold">{detail.title}</p>
-        <p class="text-orage text-xl">{detail.subtitle}</p>
-      </div>
-    {/each}
+<div class="flex flex-col h-screen w-screen text-white text-center font-bold items-center justify-center">
+  <div class="font-space-grotesk md:text-7xl text-4xl font-extrabold">
+    Designer's Edge 2025 Recap!
   </div>
+  <i class='mt-10 text-white text-2xl fa-solid fa-chevron-down'></i>
+  
 </div>
 
 <!-- <Separator />
@@ -189,97 +176,142 @@
 
 <Separator />
 
+<div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 ">
+
+  <h3 class="flex md:text-5xl text-2xl w-full items-end">2025 Award Recipients</h3>
+
+  <div class="p-6">
+    <ImageGallery {images} />
+  </div>
+
+</div>
+
+
+<Separator />
+
+
 <div
-  class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 "
+  class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5"
 >
-  <h2 class="flex md:text-5xl text-2xl w-full items-end md:pt-0 pt-10">
-    About the Competition
-  </h2>
-
-  <div class="flex md:flex-row flex-col justify-center items-center mt-10 gap-y-10 md:gap-x-64">
-  <img
-      src="/designersedge/2026poster.png"
-      alt="poster"
-      class="rounded-xl w-1/2 md:w-1/4 transition ease-in-out duration-300 hover:scale-105 shadow-off-white hover:shadow-2xl"
-  />
-    <img
-      src="/designersedge/2026poster2.png"
-      alt="poster"
-      class="rounded-xl w-1/2 md:w-1/4 transition ease-in-out duration-300 hover:scale-105 shadow-off-white hover:shadow-2xl"
-  />
+  <h3 class="flex md:text-5xl text-2xl w-full items-end">2025 Image Gallery</h3>
+  <div class="p-6">
+    <Gallery />
   </div>
-
-  <!-- Card Section -->
-  <div class="flex flex-wrap justify-center gap-6 pt-20 -pb-10">
-    {#each competitionDetails as detail}
-      <div
-        class="bg-gray-200 rounded-2xl p-4 w-64 text-center shadow-lg relative"
-      >
-        <p class="text-off-white text-5xl">{detail.logo}</p>
-
-        <!-- Title with Background Rectangle -->
-        <div class="relative w-full flex justify-center">
-          <h3 class="text-white font-bold text-xl mt-3 relative z-10 px-2">
-            {detail.title}
-          </h3>
-          <div
-            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-5/6 h-6 bg-accent-purple rounded-md z-0"
-          ></div>
-        </div>
-
-        <p class="text-orange font-normal text-lg mt-2">{detail.description}</p>
-      </div>
-    {/each}
-  </div>
-
-  <!-- Card Section -->
-   <!--
-  <div class="flex grid md:grid-cols-3 grid-cols-1 justify-items-center mt-10">
-    <img
-      src="/designersedge/info1.png"
-      alt="info"
-      class="w-full max-w-sm rounded-md shadow-md"
-    />
-    <img
-      src="/designersedge/info2.png"
-      alt="info"
-      class="w-full max-w-sm rounded-md shadow-md"
-    />
-    <img
-      src="/designersedge/info3.png"
-      alt="info"
-      class="w-full max-w-sm rounded-md shadow-md"
-    />
-  </div>
-  -->
 </div>
 
 <Separator />
 
 <div
-  class="flex flex-col w-screen h-full font-plex-mono text-white font-normal md:px-20 px-5 pb-32"
+  class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5"
 >
-  <h2
-    class="font-extrabold flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
-  >
-    FAQ
+  <h2 class="flex md:text-5xl text-3xl w-full items-end md:pt-0 pt-10">
+    Sponsors
   </h2>
-  <!-- FAQ Section -->
+
+  <!-- collab imgs -->
   <div
-    class="flex grid md:grid-cols-1 grid-cols-1 justify-items-centerfont-normal flex md:flex-col flex-row mt-4"
+    class="flex grid md:grid-cols-3 grid-cols-1 justify-items-center mt-10 p-15 gap-7 opacity-80 glowing-image"
   >
-    {#each faqInfo as info}
-      <div class="flex flex-col md:gap-6 gap-4 md:pt-10 pt-5 md:px-20 px-10">
-        <p class="text-green text-2xl font-bold">{info.question}</p>
-        <p class="text-orange font-normal text-lg text-left">{info.answer}</p>
-      </div>
-    {/each}
+    <img
+      src="/designersedge/sponsor1.png"
+      alt="sponsor"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
+    />
+    <img
+      src="/designersedge/sponsor2.png"
+      alt="sponsor"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
+    />
+    <img
+      src="/designersedge/sponsor3.png"
+      alt="sponsor"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
+    />
   </div>
-</div>
+  <Separator />
+  <h2 class="flex md:text-5xl text-3xl w-full items-end md:pt-0 pt-10">
+    Collaborators
+  </h2>
 
+  <!-- collab imgs -->
+  <div
+    class="flex grid md:grid-cols-3 grid-cols-1 justify-items-center mt-10 p-15 gap-7 opacity-80 glowing-image"
+  >
+    <img
+      src="/designersedge/collab1.png"
+      alt="collab"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
+    />
+    <img
+      src="/designersedge/collab2.png"
+      alt="collab"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
+    />
+    <img
+      src="/designersedge/collab3.png"
+      alt="collab"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
+    />
+  </div>
+  <div
+    class="flex grid md:grid-cols-2 grid-cols-1 justify-items-center mt-10 p-15 gap-y-7 opacity-80 glowing-image"
+  >
+    <img
+      src="/designersedge/collab4.png"
+      alt="collab"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
+    />
+    <img
+      src="/designersedge/collab5.png"
+      alt="collab"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
+    />
+  </div>
+  <Separator />
+  <h2 class="flex md:text-5xl text-3xl w-full items-end md:pt-0 pt-10">
+    Special Thanks
+  </h2>
 
-<div class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5">
-
+  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+    <img
+      src="/designersedge/thanks1.png"
+      alt="collab"
+      class="aspect-[16/11] rounded-xl shadow-md"
+      style="max-height: 200px"
+    />
+  </div>
+  <div
+    class="white-space: pre-line grid md:grid-cols-1 grid-cols-1 md:px-20 px-5 md:pt-10 pt-5"
+  >
+    <h3 class="flex md:text-3xl text-2xl justify-self-center">
+      THE HACKBU TEAM
+    </h3>
+  </div>
+  <Separator />
+  <h3 class="flex md:text-3xl text-2xl">Organizers</h3>
+  <div class="flex justify-center mt-10 p-15 gap-7 opacity-80 glowing-image">
+    <img
+      src="images/DE2025Winners/Organizers.jpg"
+      alt="organizers"
+      class="aspect-[4/3] rounded-xl shadow-md"
+      style="max-height: 400px"
+    />
+  </div>
+  <div
+    class="white-space: pre-line grid md:grid-cols-1 grid-cols-1 md:px-20 px-5 md:pt-10 pt-5"
+  >
+    <h3 class="flex md:text-3xl text-2xl justify-self-center">
+      Daniel Zheng & Joanna Fishman
+    </h3>
+  </div>
   <Separator />
   <h3 class="flex md:text-3xl text-2xl w-full items-end md:pt-0 pt-10">
     Faculty/Contributors
@@ -304,7 +336,68 @@
   </div>
 </div>
 
+<Separator />
 
+<div
+  class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
+>
+  <h2
+    class="flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
+  >
+    2025 Workshop Posters
+  </h2>
+
+  <!-- collab imgs -->
+  <div
+    class="flex grid md:grid-cols-4 grid-cols-1 justify-items-center mt-10 p-15 gap-6 dropShadow-glow"
+  >
+    <img
+      src="/designersedge/poster1.jpg"
+      alt="poster"
+      class="w-full max-w-xs h-auto aspect-[4/5] rounded-xl shadow-md"
+    />
+    <img
+      src="/designersedge/poster2.png"
+      alt="poster"
+      class="w-full max-w-xs h-auto aspect-[4/5] rounded-xl shadow-md"
+    />
+    <img
+      src="/designersedge/poster3.png"
+      alt="poster"
+      class="w-full max-w-xs h-auto aspect-[4/5] rounded-xl shadow-md"
+    />
+    <img
+      src="/designersedge/poster4.PNG"
+      alt="poster"
+      class="w-full max-w-xs h-auto aspect-[4/5] rounded-xl shadow-md"
+    />
+  </div>
+</div>
+
+<div
+  class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
+>
+  <h3
+    class="flex md:text-5xl text-2xl w-full items-end custom-height-md md:pt-0 pt-10"
+  >
+    2025 Designer's Edge Recap
+  </h3>
+  <div
+    style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+border-radius: 8px; will-change: transform;"
+  >
+    <iframe
+      title="Recap Slides"
+      loading="lazy"
+      style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+      src="https://www.canva.com/design/DAGk6sy-Lug/Zjlboh8yPk5hRFDQ7l4fAw/view?embed"
+      allowfullscreen="allowfullscreen"
+      allow="fullscreen"
+    >
+    </iframe>
+  </div>
+</div>
 
 <!-- <div
   class="flex flex-col w-screen h-full font-plex-mono text-white font-bold md:px-20 px-5 pb-32"
@@ -419,3 +512,25 @@
       </div>
     </div> -->
 
+<Separator />
+
+<div
+  class="flex flex-col w-screen h-full font-plex-mono text-white font-normal md:px-20 px-5 pb-32"
+>
+  <h2
+    class="font-extrabold flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
+  >
+    FAQ
+  </h2>
+  <!-- FAQ Section -->
+  <div
+    class="flex grid md:grid-cols-1 grid-cols-1 justify-items-centerfont-normal flex md:flex-col flex-row mt-4"
+  >
+    {#each faqInfo as info}
+      <div class="flex flex-col md:gap-6 gap-4 md:pt-10 pt-5 md:px-20 px-10">
+        <p class="text-green text-2xl font-bold">{info.question}</p>
+        <p class="text-orange font-normal text-lg text-left">{info.answer}</p>
+      </div>
+    {/each}
+  </div>
+</div>

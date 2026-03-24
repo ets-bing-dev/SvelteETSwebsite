@@ -5,6 +5,7 @@
     import voron from '$lib/images/voron.png';
     import x1 from '$lib/images/x1.png';
     import p1 from '$lib/images/p1.png';
+    import p2 from '$lib/images/p2.png';
     import elegoo from '$lib/images/elegoo.png';
     import elegoo4 from '$lib/images/elegoo4.png';
     import form3 from '$lib/images/form3.png';
@@ -44,6 +45,13 @@
             image = {x1}
             header = "Bambu X1-Carbon"
             link="https://store.bambulab.com/products/x1-carbon"
+            description = "(256mm x 256mm x 256mm)"
+            />
+
+            <IndividualEquipment
+            image = {p2}
+            header = "Bambu P2S"
+            link="https://store.bambulab.com/products/p2s"
             description = "(256mm x 256mm x 256mm)"
             />
 
