@@ -512,25 +512,5 @@ border-radius: 8px; will-change: transform;"
       </div>
     </div> -->
 
-<Separator />
 
-<div
-  class="flex flex-col w-screen h-full font-plex-mono text-white font-normal md:px-20 px-5 pb-32"
->
-  <h2
-    class="font-extrabold flex md:text-5xl text-3xl w-full items-end custom-height-md md:pt-0 pt-10"
-  >
-    FAQ
-  </h2>
-  <!-- FAQ Section -->
-  <div
-    class="flex grid md:grid-cols-1 grid-cols-1 justify-items-centerfont-normal flex md:flex-col flex-row mt-4"
-  >
-    {#each faqInfo as info}
-      <div class="flex flex-col md:gap-6 gap-4 md:pt-10 pt-5 md:px-20 px-10">
-        <p class="text-green text-2xl font-bold">{info.question}</p>
-        <p class="text-orange font-normal text-lg text-left">{info.answer}</p>
-      </div>
-    {/each}
-  </div>
-</div>
+
