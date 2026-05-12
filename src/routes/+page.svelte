@@ -1,4 +1,5 @@
 <script>
+  import Chatbot from '$lib/components/Chatbot.svelte';
 	import craft from '$lib/images/cricut.png';
   import craftSquare from '$lib/images/cricutSquare.png';
   import printer from '$lib/images/printer.jpg';
@@ -119,3 +120,4 @@
   </div>
 
 </div>
+<Chatbot />
