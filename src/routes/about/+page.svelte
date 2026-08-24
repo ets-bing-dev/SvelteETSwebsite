@@ -25,67 +25,66 @@
 <!-- Employees Section -->
 <div class="h-full w-screen grid md:grid-cols-3 grid-cols-2 md:px-20 px-5">
      <About
-     image="/images/etsjake.jpg"
-     name="Jake Digiugno"
-     position="Director"
-     major="Computer Science"
-     year="Senior"
-     />
-     <About
-     image="/images/etsnathan.png"
-     name="Nathan Teig"
-     position="Manufacturing Specialist"
-     major="Mechanical Engineering"
-     year="Senior"
-     />
-     <About
-     image="/images/etsdavid.png"
-     name="David Poncé"
-     position="A.I. Specialist"
-     major="Computer Science"
-     year="Senior"
-     />
-     <About
-     image="/images/etstim.png"
-     name="Timothy Tran"
-     position="3D Design Specialist"
-     major="Mechanical Engineering"
-     year="Junior"
-     />
-     <About
-     image="/images/etserick.png"
-     name="Erick Palka"
-     position="Automotive Specialist"
-     major="Mechanical Engineering"
-     year="Junior"
-     />
-     <About
-     image="/images/etsrebecca.png"
      name="Rebecca Jang"
-     position="Marketing Specialist"
+     position="External Director"
+     major="Mechanical Engineering"
+     year="Senior"
+     />
+
+     <About
+     name="Samuel Ashkenas-Demarco"
+     position="Internal Director"
      major="Mechanical Engineering"
      year="Junior"
      />
+
      <About
-     image="/images/default.png"
-     name="Leah Chow"
-     position="Design Specialist"
-     major="Graphic Design"
+     name="Erick Palka"
+     position="Technician"
+     major="Mechanical Engineering"
+     year="Senior"
+     />
+
+     <About
+     name="Timothy Tran"
+     position="Technician"
+     major="Mechanical Engineering"
+     year="Senior"
+     />
+     
+     <About
+     name="Benjamin Edgar-McNearney"
+     position="Technician"
+     major="Electrical Engineering"
      year="Junior"
      />
+
      <About
-     image="/images/default.png"
      name="Bianna Chen"
-     position="Software Specialist"
+     position="Technician"
+     major="Computer Science"
+     year="Junior"
+     />
+     
+     <About
+     name="Josh Song"
+     position="Technician"
+     major="Mechanical Engineering"
+     year="Junior"
+     />
+
+     <About
+     name="Ishmael Lallmahamad"
+     position="Technician"
      major="Computer Science"
      year="Sophomore"
      />
+
      <About
-     image="/images/default.png"
-     name="Josh Song"
-     position="Resin Specialist"
-     major="Mechanical Engineering"
-     year="Sophomore"
+     name="Raymond Chen"
+     position="Marketing"
+     major="Systems Science and Industrial Engineering"
+     year="Freshman"
      />
 
 </div>
@@ -123,6 +122,12 @@
           Alumni:
      </p>
      <div class="md:flex md:flex-row md:space-y-0 grid grid-cols-2 justify-between md:text-base text-xs text-orange whitespace-pre-line md:px-20 mt-5">
+     <p>
+          Jake Digiugno
+          Nathan Teig
+          David Ponce
+          Leah Chow
+     </p>
      <p>
           Van James Huynh
           Winnie Yong

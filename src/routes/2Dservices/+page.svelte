@@ -15,12 +15,12 @@
     video = 'videos/cricutVid.webm' 
     header = "2D CRAFTS OVERVIEW"
     subheaderone = "How to Request"
-    paragraphone = "1. Have your file in either PNG, JPEG, or SVG.
-                    2. Send us an email to etsbing@binghamton.edu.
-                        &#8226; Attach the file.
-                        &#8226; See below for more specific description.
-                    3. Wait for our response email.
-                    4. Visit the ETS at the Tech hub!"
+    paragraphone = "{`<a href="https://my.binghamton.edu/page/ets/home"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="underline">
+                        Submit a Cricut print here!
+                    </a>`}"
     subheadertwo = "How to Pay"
     paragraphtwo = "You don't! Every week, you can print out one sticker sheet for free. If you would like to do bulk prints, be sure to bring in your own material and we will teach you how to cut the stickers yourself"
     />

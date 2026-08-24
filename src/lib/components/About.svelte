@@ -1,9 +1,8 @@
 <script>
-    export let image, name, position, major, year;
+    export let name, position, major, year;
 </script>
 <div class="h-full w-full items-center text-center font-plex-mono md:font-bold font-normal">
     <div class="h-full w-full flex flex-col items-center">
-        <img class="thumbnail" alt="thumbnail" src={image}/>
         <div class="text-white md:text-3xl text-xs font-bold">
             {name}
         </div>
