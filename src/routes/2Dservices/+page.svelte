@@ -15,12 +15,11 @@
     video = 'videos/cricutVid.webm' 
     header = "2D CRAFTS OVERVIEW"
     subheaderone = "How to Request"
-    paragraphone = "{`<a href="https://my.binghamton.edu/page/ets/home"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="underline">
-                        Submit a Cricut print here!
-                    </a>`}"
+    paragraphone={`<a href="https://forms.gle/aerNqR662hZXZ7rPA" 
+    target="_blank" 
+    rel="noopener noreferrer">
+    <u>Submit here!</u></a>
+    `}
     subheadertwo = "How to Pay"
     paragraphtwo = "You don't! Every week, you can print out one sticker sheet for free. If you would like to do bulk prints, be sure to bring in your own material and we will teach you how to cut the stickers yourself"
     />
